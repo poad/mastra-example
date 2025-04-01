@@ -19,4 +19,5 @@ const langfuse = langfuseSk && langfusePk ? {
 const stackNamePrefix = env ? `${env}-` : '';
 const stackName = `${stackNamePrefix}mastra-example`;
 new CdkStack(app, stackName, {
+  langfuse,
 });

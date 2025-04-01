@@ -12,10 +12,8 @@ updates:
       - poad
 
   - package-ecosystem: npm
-    directories: 
+    directories:
       - '/'
-      - '/agent/'
-      - '/cdk/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo

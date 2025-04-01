@@ -5,7 +5,7 @@ import { weatherWorkflow } from './workflows';
 import { weatherAgent } from './agents';
 import { LangfuseExporter } from 'langfuse-vercel';
 
-export const mastra = new Mastra({
+export const mastra: Mastra = new Mastra({
   workflows: { weatherWorkflow },
   agents: { weatherAgent },
   logger: createLogger({
@@ -13,7 +13,7 @@ export const mastra = new Mastra({
     level: 'info',
   }),
   telemetry: {
-    serviceName: 'ai', // 必須: LangfuseがAI SDKトレースと認識するため
+    serviceName: 'ai',
     enabled: true,
     export: {
       type: 'custom',

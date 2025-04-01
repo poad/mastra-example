@@ -6,7 +6,6 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as awslogs from 'aws-cdk-lib/aws-logs';
 import * as iam from 'aws-cdk-lib/aws-iam';
-import { buildFrontend } from './process/setup';
 
 interface CdkStackProps extends cdk.StackProps {
   environment?: string;
@@ -30,10 +29,8 @@ export class CdkStack extends cdk.Stack {
       langfuse,
     } = props;
 
-    buildFrontend();
-
     const functionName = `${environment ? `${environment}-` : ''}mastra-example-api`;
-    new awslogs.LogGroup(this, 'ApolloLambdaFunctionLogGroup', {
+    new awslogs.LogGroup(this, 'LambdaFunctionLogGroup', {
       logGroupName: `/aws/lambda/${functionName}`,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       retention: awslogs.RetentionDays.ONE_DAY,
@@ -51,25 +48,29 @@ export class CdkStack extends cdk.Stack {
       } : {}),
     } : {};
 
-    const fn = new lambda.Function(this, 'Lambda', {
+    // buildMastra();
+
+    const fn = new nodejs.NodejsFunction(this, 'Lambda', {
       runtime: lambda.Runtime.NODEJS_22_X,
       architecture: lambda.Architecture.ARM_64,
-      handler: 'index.handler',
-      code: lambda.Code.fromAsset('../agent/.mastra/output'),
+      entry: './src/index.ts',
       functionName,
       retryAttempts: 0,
       environment: {
         ...langfuseEnv,
       },
-      // bundling: {
-      //   target: 'node22',
-      //   minify: true,
-      //   format: nodejs.OutputFormat.ESM,
-      //   banner: 'import { createRequire } from \'module\';const require = createRequire(import.meta.url);',
-      // },
-      memorySize: 256,
+      bundling: {
+        target: 'node22',
+        minify: true,
+        externalModules: [
+          '@aws-sdk/*',
+        ],
+        format: nodejs.OutputFormat.ESM,
+        banner: 'import { createRequire } from \'module\';const require = createRequire(import.meta.url);',
+      },
+      memorySize: 128,
       timeout: cdk.Duration.minutes(1),
-      role: new iam.Role(this, 'ApolloLambdaFunctionExecutionRole', {
+      role: new iam.Role(this, 'LambdaFunctionExecutionRole', {
         assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
         managedPolicies: [
           iam.ManagedPolicy.fromAwsManagedPolicyName('AWSLambdaExecute'),
@@ -94,38 +95,44 @@ export class CdkStack extends cdk.Stack {
       applicationLogLevelV2: devOptions.applicationLogLevelV2,
     });
 
-    const cf = new cloudfront.Distribution(this, 'CloudFront', {
-      comment: `Mastra example API`,
-      defaultBehavior: {
-        origin: origins.FunctionUrlOrigin.withOriginAccessControl(
-          fn.addFunctionUrl({
-            authType: cdk.aws_lambda.FunctionUrlAuthType.AWS_IAM,
-            invokeMode: cdk.aws_lambda.InvokeMode.RESPONSE_STREAM,
-          }),
-          {
-            originAccessControl: new cloudfront.FunctionUrlOriginAccessControl(this, 'OAC', {
-              originAccessControlName: `${environment ? `${environment}-` : ''}mastra-example-api`,
-              signing: cloudfront.Signing.SIGV4_ALWAYS,
-            }),
-            originId: 'lambda',
-            readTimeout: cdk.Duration.minutes(1),
-          },
-        ),
-        cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
-        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-      },
-      httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
+    new lambda.FunctionUrl(this, 'LambdaUrl', {
+      function: fn,
+      authType: cdk.aws_lambda.FunctionUrlAuthType.NONE,
+      invokeMode: cdk.aws_lambda.InvokeMode.BUFFERED,
     });
 
-    // Add permission Lambda Function URLs
-    fn.addPermission('AllowCloudFrontServicePrincipal', {
-      principal: new iam.ServicePrincipal('cloudfront.amazonaws.com'),
-      action: 'lambda:InvokeFunctionUrl',
-      sourceArn: `arn:aws:cloudfront::${cdk.Stack.of(this).account}:distribution/${cf.distributionId}`,
-    });
+    // const cf = new cloudfront.Distribution(this, 'CloudFront', {
+    //   comment: `Mastra example API`,
+    //   defaultBehavior: {
+    //     origin: origins.FunctionUrlOrigin.withOriginAccessControl(
+    //       fn.addFunctionUrl({
+    //         authType: cdk.aws_lambda.FunctionUrlAuthType.AWS_IAM,
+    //         invokeMode: cdk.aws_lambda.InvokeMode.RESPONSE_STREAM,
+    //       }),
+    //       {
+    //         originAccessControl: new cloudfront.FunctionUrlOriginAccessControl(this, 'OAC', {
+    //           originAccessControlName: `${environment ? `${environment}-` : ''}mastra-example-api`,
+    //           signing: cloudfront.Signing.SIGV4_ALWAYS,
+    //         }),
+    //         originId: 'lambda',
+    //         readTimeout: cdk.Duration.minutes(1),
+    //       },
+    //     ),
+    //     cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
+    //     viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+    //   },
+    //   httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
+    // });
 
-    new cdk.CfnOutput(this, 'AccessURLOutput', {
-      value: `https://${cf.distributionDomainName}`,
-    });
+    // // Add permission Lambda Function URLs
+    // fn.addPermission('AllowCloudFrontServicePrincipal', {
+    //   principal: new iam.ServicePrincipal('cloudfront.amazonaws.com'),
+    //   action: 'lambda:InvokeFunctionUrl',
+    //   sourceArn: `arn:aws:cloudfront::${cdk.Stack.of(this).account}:distribution/${cf.distributionId}`,
+    // });
+
+    // new cdk.CfnOutput(this, 'AccessURLOutput', {
+    //   value: `https://${cf.distributionDomainName}`,
+    // });
   }
 }
