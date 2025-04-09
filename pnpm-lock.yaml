@@ -2362,8 +2362,8 @@ packages:
     resolution: {integrity: sha512-xkjOecfnKGkSsOwtZ5Pz7Us/T6mrbPQrq0nh+aCO5V9nk5NLWmasAHumTKjiPJPWANe+kAZ84Jc8ooJkzZ88Sw==}
     hasBin: true
 
-  fastembed@1.14.3:
-    resolution: {integrity: sha512-ieHaN3k2ZubDaewRTTndZFoItyiDrr6MwvqA+rCYty2kALY8vNbEwyBsLKnm8qDV+5HBpQl5rXEm6IKbwJnqKg==}
+  fastembed@1.14.4:
+    resolution: {integrity: sha512-ZU9hpQRkYKPD/k0A6NzFe/Z9voSU3Saxve/1kLY9aS9iyUJYLJPI/3gsDgRA9uxwIMi8w7/tjH1lRW8K1N+wWA==}
 
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
@@ -4705,7 +4705,7 @@ snapshots:
       cohere-ai: 7.16.0
       date-fns: 3.6.0
       dotenv: 16.4.7
-      fastembed: 1.14.3
+      fastembed: 1.14.4
       hono: 4.7.6
       hono-openapi: 0.4.6(hono@4.7.6)(zod@3.24.2)
       json-schema: 0.4.0
@@ -6864,7 +6864,7 @@ snapshots:
     dependencies:
       strnum: 1.1.2
 
-  fastembed@1.14.3:
+  fastembed@1.14.4:
     dependencies:
       '@anush008/tokenizers': 0.0.0
       onnxruntime-node: 1.21.0
