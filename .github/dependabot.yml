@@ -1,0 +1,60 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+      timezone: Asia/Tokyo
+    allow:
+      - dependency-type: all
+    rebase-strategy: auto
+    assignees:
+      - poad
+    cooldown:
+      default-days: 3
+    groups:
+      actions:
+        patterns:
+          - '*'
+
+  - package-ecosystem: npm
+    directories:
+      - '/'
+      - '/common/core/'
+      - '/common/backend/core'
+      - '/common/backend/langchain'
+      - '/common/backend/'
+      - '/agents/agent-ai-sdk/'
+      - '/agents/agent-claude-agent-sdk/'
+      - '/agents/agent-deepagents/'
+      - '/agents/agent-langchain/'
+      - '/agents/agent-langchain-nextjs/'
+      - '/agents/agent-strands/'
+      - '/basic/cdk/'
+      - '/basic/app/'
+      - '/mcp/clients/mcp-client-http/'
+      - '/mcp/clients/mcp-client-typescript/'
+      - '/mcp/servers/postgresql-http/'
+      - '/mcp/servers/weather/'
+      - '/mcp/servers/weather-http/'
+      - '/mcp/servers/resource-mcp-server/'
+      - '/rag/app/'
+      - '/rag/batch/'
+      - '/rag/cdk/'
+      - '/chat-app/'
+    schedule:
+      interval: daily
+      timezone: Asia/Tokyo
+    cooldown:
+      default-days: 3
+      exclude:
+        - 'pnpm'
+    allow:
+      - dependency-type: all
+    rebase-strategy: auto
+    assignees:
+      - poad
+    groups:
+      npm:
+        patterns:
+          - '*'
