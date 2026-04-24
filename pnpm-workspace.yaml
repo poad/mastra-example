@@ -1,0 +1,21 @@
+packages:
+  - .
+
+minimumReleaseAge: 10080 # 7 days in minutes
+minimumReleaseAgeExclude:
+  - fast-xml-parser@5.7.1
+  - fast-xml-builder@1.1.5
+  - uuid@14.0.0
+
+
+overrides:
+  eslint-import-resolver-typescript: '>=4'
+  fast-xml-parser@<5.7.0: '>=5.7.0'
+  file-type@>=13.0.0 <21.3.1: '>=21.3.1'
+  uuid@<14.0.0: '>=14.0.0'
+  semver: '>=7'
+
+strictPeerDependencies: false
+
+# mastra build で compromise@14.15.0 で引っかかるのを回避するため no-downgrade ではなく time-based を使用する
+trustPolicy: time-based
