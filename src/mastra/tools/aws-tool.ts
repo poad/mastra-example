@@ -6,11 +6,11 @@ const mcp = new MCPClient({
       url: new URL('https://knowledge-mcp.global.api.aws'),
       enableServerLogs: true,
     },
-    context7: {
-      command: 'npx',
-      args: ['-y', '@upstash/context7-mcp@latest'],
-      enableServerLogs: true,
-    },
+    // context7: {
+    //   command: 'npx',
+    //   args: ['-y', '@upstash/context7-mcp@latest'],
+    //   enableServerLogs: true,
+    // },
   },
 });
 

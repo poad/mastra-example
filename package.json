@@ -31,11 +31,13 @@
     "@mastra/mcp": "^1.5.1",
     "@mastra/memory": "^1.16.0",
     "@mastra/observability": "^1.10.0",
+    "@mastra/otel-bridge": "^1.0.17",
     "@mastra/otel-exporter": "^1.0.17",
     "@opentelemetry/exporter-trace-otlp-grpc": "^0.215.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@duckdb/node-bindings": "1.5.2-r.1",
     "@eslint/compat": "^2.0.5",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",

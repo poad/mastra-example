@@ -1,25 +1,35 @@
+import '@grpc/grpc-js';
+import '@opentelemetry/exporter-trace-otlp-grpc';
 import { awsAgent } from './agents/aws-agent.js';
-import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } from './scorers/aws-scorer.js';
+// import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } from './scorers/aws-scorer.js';
 import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore } from '@mastra/libsql';
-import { DuckDBStore } from '@mastra/duckdb';
 import { MastraCompositeStore } from '@mastra/core/storage';
-import { Observability, SensitiveDataFilter } from '@mastra/observability';
+import { DefaultExporter, Observability, SamplingStrategyType, SensitiveDataFilter } from '@mastra/observability';
 import { OtelExporter } from '@mastra/otel-exporter';
+// import { OtelBridge } from '@mastra/otel-bridge';
+import { createConfig } from './observability-configs/index.js';
+// import { DuckDBStore } from '@mastra/duckdb';
 
 export const mastra = new Mastra({
+  bundler: {
+    externals: [
+      '@grpc/grpc-js',
+      "@duckdb/node-bindings"
+    ],
+  },
   agents: { awsAgent },
-  scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
+  // scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
   storage: new MastraCompositeStore({
     id: 'composite-storage',
     default: new LibSQLStore({
       id: 'mastra-storage',
       url: 'file:./mastra.db',
     }),
-    domains: {
-      observability: await new DuckDBStore().getStore('observability'),
-    },
+    // domains: {
+    //   observability: await new DuckDBStore().getStore('observability'),
+    // },
   }),
   logger: new PinoLogger({
     name: 'Mastra',
@@ -29,16 +39,13 @@ export const mastra = new Mastra({
     configs: {
       default: {
         serviceName: 'mastra',
+        sampling: { type: SamplingStrategyType.ALWAYS }, // すべてのトレースをサンプリング
+        // bridge: new OtelBridge(),
         exporters: [
+          new DefaultExporter(),
           new OtelExporter({
             provider: {
-              custom: {
-                endpoint: `${process.env.MLFLOW_TRACKING_URI ?? 'http://127.0.0.1:5000'}/v1/traces`,
-                protocol: 'http/protobuf',
-                headers: {
-                  'x-mlflow-experiment-id': process.env.MLFLOW_EXPERIMENT_ID ?? '0',
-                },
-              },
+              custom: await createConfig(process.env.OBSERVABILITY_PROVIDER ?? 'mlflow'),
             },
           }),
         ],
