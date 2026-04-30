@@ -81,7 +81,7 @@ async function fetchAccessToken(): Promise<string | null> {
     };
 
     return data.access_token;
-  } catch (error) {
+  } catch {
     return null;
   }
 }
@@ -150,7 +150,7 @@ export const initialize = async (): Promise<CustomConfig> => {
       'x-databricks-zerobus-table-name': traceTableName,
       Authorization: `Bearer ${token}`,
     } : {
-      "content-type": "application/x-protobuf",
+      'content-type': 'application/x-protobuf',
       'X-Databricks-UC-Table-Name': traceTableName,
       Authorization: `Bearer ${token}`,
     },

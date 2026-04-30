@@ -2,6 +2,7 @@ import '@grpc/grpc-js';
 import '@opentelemetry/exporter-trace-otlp-grpc';
 import { awsAgent } from './agents/aws-agent.js';
 // import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } from './scorers/aws-scorer.js';
+import { createConfig } from './observability-configs/index.js';
 import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore } from '@mastra/libsql';
@@ -9,14 +10,13 @@ import { MastraCompositeStore } from '@mastra/core/storage';
 import { DefaultExporter, Observability, SamplingStrategyType, SensitiveDataFilter } from '@mastra/observability';
 import { OtelExporter } from '@mastra/otel-exporter';
 // import { OtelBridge } from '@mastra/otel-bridge';
-import { createConfig } from './observability-configs/index.js';
 // import { DuckDBStore } from '@mastra/duckdb';
 
 export const mastra = new Mastra({
   bundler: {
     externals: [
       '@grpc/grpc-js',
-      "@duckdb/node-bindings"
+      '@duckdb/node-bindings',
     ],
   },
   agents: { awsAgent },

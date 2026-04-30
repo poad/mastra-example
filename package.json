@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@ai-sdk/amazon-bedrock": "^4.0.96",
-    "@aws-sdk/credential-providers": "^3.1034.0",
+    "@aws-sdk/credential-providers": "^3.1035.0",
     "@grpc/grpc-js": "^1.14.3",
     "@mastra/core": "^1.26.0",
     "@mastra/duckdb": "^1.2.0",
