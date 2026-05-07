@@ -6,16 +6,27 @@ allowBuilds:
   protobufjs: false
   unrs-resolver: false
 
+blockExoticSubdeps: true
+
 minimumReleaseAge: 10080 # 7 days in minutes
 
+minimumReleaseAgeExclude:
+  - ip-address@10.1.1
+
 overrides:
-  eslint-import-resolver-typescript: '>=4'
-  fast-xml-parser@<5.7.0: '>=5.7.0'
-  file-type@>=13.0.0 <21.3.1: '>=21.3.1'
+  '@aws-sdk/credential-providers': '^3'
+  '@typescript-eslint/utils': ^8
+  '@typescript-eslint/parser': ^8
+  '@typescript-eslint/eslint-plugin': ^8
+  '@typescript-eslint/typescript-estree': ^8
+  compromise: 14.14.4
+  typescript-eslint: ^8
+  eslint-import-resolver-typescript: '^4.4.4'
   semver: '>=7'
   uuid@<14.0.0: '>=14.0.0'
+  ip-address@<=10.1.0: ^10.1.1
 
 strictPeerDependencies: false
 
 # mastra build で compromise@14.15.0 で引っかかるのを回避するため no-downgrade ではなく time-based を使用する
-trustPolicy: time-based
+trustPolicy: no-downgrade

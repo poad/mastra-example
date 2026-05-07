@@ -3,6 +3,7 @@ import '@opentelemetry/exporter-trace-otlp-grpc';
 import { awsAgent } from './agents/aws-agent.js';
 // import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } from './scorers/aws-scorer.js';
 import { createConfig } from './observability-configs/index.js';
+import { CustomDeployer } from './deployer.js';
 import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore } from '@mastra/libsql';
@@ -20,6 +21,7 @@ export const mastra = new Mastra({
     ],
   },
   agents: { awsAgent },
+  deployer: new CustomDeployer(),
   // scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
   storage: new MastraCompositeStore({
     id: 'composite-storage',
