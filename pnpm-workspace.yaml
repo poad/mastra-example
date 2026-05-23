@@ -13,6 +13,7 @@ minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
   - ip-address@10.1.1
   - ws@8.20.1
+  - qs@6.15.2
 
 overrides:
   compromise: 14.14.4
@@ -20,6 +21,7 @@ overrides:
   semver: '>=7'
   ip-address@<=10.1.0: ^10.1.1
   ws@>=8.0.0 <8.20.1: ^8.20.1
+  qs@>=6.11.1 <=6.15.1: ^6.15.2
 
 strictPeerDependencies: false
 
