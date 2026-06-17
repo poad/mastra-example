@@ -11,9 +11,7 @@ blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - '@ai-sdk/provider-utils@3.0.98'
-
-  - pnpm@11.6.0
+  - pnpm@11.7.0
   - esbuild@0.28.1
   - '@esbuild/aix-ppc64@0.28.1'
   - '@esbuild/android-arm64@0.28.1'
@@ -41,6 +39,9 @@ minimumReleaseAgeExclude:
   - '@esbuild/win32-arm64@0.28.1'
   - '@esbuild/win32-ia32@0.28.1'
   - '@esbuild/win32-x64@0.28.1'
+  - '@ai-sdk/provider-utils@3.0.98'
+  - js-yaml@4.1.2
+  - '@opentelemetry/core@2.8.0'
 
 overrides:
   eslint-import-resolver-typescript: '^4.4.5'
@@ -48,6 +49,8 @@ overrides:
   '@ai-sdk/provider-utils@<=3.0.97': ^3.0.98
   esbuild@>=0.17.0 <0.28.1: ^0.28.1
   esbuild@>=0.27.3 <0.28.1: ^0.28.1
+  '@opentelemetry/core@<2.8.0': ^2.8.0
+  js-yaml@<=4.1.1: ^4.1.2
 
 strictPeerDependencies: false
 
