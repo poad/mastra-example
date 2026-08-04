@@ -11,20 +11,25 @@ blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - pnpm@11.19.0
-  - '@ai-sdk/provider-utils@5.0.18'
+  - pnpm@11.20.0
+  - '@ai-sdk/provider-utils@3.0.98 || 5.0.18'
   - '@hono/node-server@2.0.5'
   - '@opentelemetry/core@2.8.0'
-  - brace-expansion@1.1.17
+  - brace-expansion@1.1.17 || 1.1.18 || 5.0.9
   - js-yaml@4.1.2
   - '@ai-sdk/provider@4.0.4'
+  - fast-uri@3.1.5
+  - hono@4.12.34
 
 overrides:
-  '@ai-sdk/provider-utils@<=3.0.97': ^5.0.18
+  '@ai-sdk/provider-utils': ^5.0.18
   '@hono/node-server@<2.0.5': ^2.0.5
   '@opentelemetry/core@<2.8.0': ^2.8.0
-  brace-expansion@<1.1.17: ^1.1.17
+  brace-expansion@<1.1.18: ^1.1.18
+  brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
   eslint-import-resolver-typescript: '^4.4.5'
+  fast-uri@>=3.0.0 <3.1.5: ^3.1.5
+  hono@<4.12.34: ^4.12.34
   js-yaml@<=4.1.1: ^4.1.2
   semver: '>=7'
 
