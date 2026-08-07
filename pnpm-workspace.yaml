@@ -11,7 +11,6 @@ blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - pnpm@11.20.0
   - '@ai-sdk/provider-utils@3.0.98 || 5.0.18'
   - '@hono/node-server@2.0.5'
   - '@opentelemetry/core@2.8.0'
@@ -22,7 +21,7 @@ minimumReleaseAgeExclude:
   - hono@4.12.34
 
 overrides:
-  '@ai-sdk/provider-utils': ^5.0.18
+  '@ai-sdk/provider-utils@<=3.0.97': ^5.0.18
   '@hono/node-server@<2.0.5': ^2.0.5
   '@opentelemetry/core@<2.8.0': ^2.8.0
   brace-expansion@<1.1.18: ^1.1.18
