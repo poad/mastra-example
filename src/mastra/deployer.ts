@@ -1,11 +1,12 @@
 import { mkdir, stat, copyFile, readFile, writeFile } from 'node:fs/promises';
-import { dirname, resolve, join  } from 'node:path'; import { Deployer } from '@mastra/deployer';
-import { FileService } from '@mastra/deployer/build';
+import { dirname, resolve, join } from 'node:path';
+
 import type { Config } from '@mastra/core/mastra';
+import { Deployer } from '@mastra/deployer';
+import { FileService } from '@mastra/deployer/build';
 import { IS_DEFAULT } from '@mastra/deployer/bundler';
 
 export class CustomDeployer extends Deployer {
-
   constructor() {
     super({ name: 'CustomBuild' });
     this.platform = process.versions?.bun ? 'neutral' : 'node';
@@ -34,10 +35,7 @@ export class CustomDeployer extends Deployer {
     }
   }
 
-  protected override async installDependencies(
-    outputDirectory: string,
-    rootDir = process.cwd(),
-  ) {
+  protected override async installDependencies(outputDirectory: string, rootDir = process.cwd()) {
     try {
       await super.installDependencies(outputDirectory, rootDir);
     } catch {

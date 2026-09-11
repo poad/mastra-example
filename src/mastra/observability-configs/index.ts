@@ -1,5 +1,6 @@
-import * as mlflow from './mlflow.js';
 import * as databricks from './databricks.js';
+import * as mlflow from './mlflow.js';
+
 import type { CustomConfig } from '@mastra/otel-exporter';
 
 export const ObservabilityConfig = {
@@ -7,7 +8,9 @@ export const ObservabilityConfig = {
   DATABRICKS: 'databricks',
 };
 
-type ObservabilityConfigType = typeof ObservabilityConfig.MLFLOW | typeof ObservabilityConfig.DATABRICKS;
+type ObservabilityConfigType =
+  | typeof ObservabilityConfig.MLFLOW
+  | typeof ObservabilityConfig.DATABRICKS;
 
 export const createConfig = async (configType: ObservabilityConfigType): Promise<CustomConfig> => {
   if (configType === ObservabilityConfig.MLFLOW) {

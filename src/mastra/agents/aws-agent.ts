@@ -1,9 +1,10 @@
-import { tools } from '../tools/aws-tool.js';
 import { scorers } from '../scorers/aws-scorer.js';
-import { Agent } from '@mastra/core/agent';
-import { Memory } from '@mastra/memory';
+import { tools } from '../tools/aws-tool.js';
+
 import { createAmazonBedrock } from '@ai-sdk/amazon-bedrock';
 import { fromNodeProviderChain } from '@aws-sdk/credential-providers';
+import { Agent } from '@mastra/core/agent';
+import { Memory } from '@mastra/memory';
 
 const bedrock = createAmazonBedrock({
   region: 'us-east-1',

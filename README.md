@@ -45,11 +45,11 @@ cp .env.example .env
 
 ### Environment Variables
 
-| Variable | Description | Default |
-| -------- | ----------- | ------- |
-| `AWS_REGION` | Bedrock リージョン | `us-east-1` |
-| `MLFLOW_TRACKING_URI` | MLflow サーバーURL | `http://127.0.0.1:5000` |
-| `MLFLOW_EXPERIMENT_ID` | MLflow 実験ID | `0` |
+| Variable               | Description        | Default                 |
+| ---------------------- | ------------------ | ----------------------- |
+| `AWS_REGION`           | Bedrock リージョン | `us-east-1`             |
+| `MLFLOW_TRACKING_URI`  | MLflow サーバーURL | `http://127.0.0.1:5000` |
+| `MLFLOW_EXPERIMENT_ID` | MLflow 実験ID      | `0`                     |
 
 ## Commands
 

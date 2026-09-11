@@ -6,4 +6,4 @@ export const config: CustomConfig = {
   headers: {
     'x-mlflow-experiment-id': process.env.MLFLOW_EXPERIMENT_ID ?? '0',
   },
-}; 
+};

@@ -1,12 +1,15 @@
-import { z } from 'zod';
 import { createAmazonBedrock } from '@ai-sdk/amazon-bedrock';
 import { fromNodeProviderChain } from '@aws-sdk/credential-providers';
-import { createToolCallAccuracyScorerCode, createCompletenessScorer  } from '@mastra/evals/scorers/prebuilt';
+import { createScorer } from '@mastra/core/evals';
+import {
+  createToolCallAccuracyScorerCode,
+  createCompletenessScorer,
+} from '@mastra/evals/scorers/prebuilt';
 import {
   getAssistantMessageFromRunOutput,
   getUserMessageFromRunInput,
 } from '@mastra/evals/scorers/utils';
-import { createScorer } from '@mastra/core/evals';
+import { z } from 'zod';
 
 const bedrock = createAmazonBedrock({
   region: 'us-east-1',
@@ -24,8 +27,7 @@ export const completenessScorer = createCompletenessScorer();
 export const translationScorer = createScorer({
   id: 'translation-quality-scorer',
   name: 'Translation Quality',
-  description:
-    'Checks that non-English location names are translated and used correctly',
+  description: 'Checks that non-English location names are translated and used correctly',
   type: 'agent',
   judge: {
     model: bedrock('global.amazon.nova-2-lite-v1:0'),
@@ -42,8 +44,7 @@ export const translationScorer = createScorer({
     return { userText, assistantText };
   })
   .analyze({
-    description:
-      'Extract location names and detect language/translation adequacy',
+    description: 'Extract location names and detect language/translation adequacy',
     outputSchema: z.object({
       nonEnglish: z.boolean(),
       translated: z.boolean(),
@@ -74,15 +75,14 @@ export const translationScorer = createScorer({
         `,
   })
   .generateScore(({ results }) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // oxlint-disable-next-line @typescript-eslint/no-explicit-any
     const r = (results as any)?.analyzeStepResult || {};
     if (!r.nonEnglish) return 1; // If not applicable, full credit
-    if (r.translated)
-      return Math.max(0, Math.min(1, 0.7 + 0.3 * (r.confidence ?? 1)));
+    if (r.translated) return Math.max(0, Math.min(1, 0.7 + 0.3 * (r.confidence ?? 1)));
     return 0; // Non-English but not translated
   })
   .generateReason(({ results, score }) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // oxlint-disable-next-line @typescript-eslint/no-explicit-any
     const r = (results as any)?.analyzeStepResult || {};
     return `Translation scoring: nonEnglish=${r.nonEnglish ?? false}, translated=${r.translated ?? false}, confidence=${r.confidence ?? 0}. Score=${score}. ${r.explanation ?? ''}`;
   });

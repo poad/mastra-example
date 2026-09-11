@@ -60,7 +60,7 @@ async function fetchAccessToken(): Promise<string | null> {
     const response = await fetch(config.endpoint, {
       method: 'POST',
       headers: {
-        'Authorization': `Basic ${credentials}`,
+        Authorization: `Basic ${credentials}`,
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: 'grant_type=client_credentials&scope=all-apis',
@@ -72,7 +72,7 @@ async function fetchAccessToken(): Promise<string | null> {
       return null;
     }
 
-    const data = await response.json() as { access_token: string; expires_in: number };
+    const data = (await response.json()) as { access_token: string; expires_in: number };
     const expiresAt = Date.now() + data.expires_in * 1000;
 
     tokenCache = {
@@ -112,20 +112,17 @@ export const initialize = async (): Promise<CustomConfig> => {
   const token = await getAccessToken();
   if (!token) {
     console.log('no Databricks access token found.');
-    return {
-    };
+    return {};
   }
   const ucSchema = process.env.DATABRICKS_UC_SCHEMA_NAME;
   if (!ucSchema) {
     console.log('no DATABRICKS_UC_SCHEMA_NAME found.');
-    return {
-    };
+    return {};
   }
   const tablePrefix = process.env.DATABRICKS_UC_TABLE_PREFIX;
   if (!tablePrefix) {
     console.log('no DATABRICKS_UC_TABLE_PREFIX found.');
-    return {
-    };
+    return {};
   }
   const traceTableName = `${ucSchema}.${tablePrefix}_otel_spans`;
   console.log(traceTableName);
@@ -133,26 +130,27 @@ export const initialize = async (): Promise<CustomConfig> => {
   const protocol = process.env.OTEL_EXPORTER_OTLP_PROTOCOL;
   if (!protocol) {
     console.log('no OTEL_EXPORTER_OTLP_PROTOCOL found.');
-    return {
-    };
+    return {};
   }
 
   if (protocol !== 'grpc' && protocol !== 'http/protobuf') {
     console.log(`Unsupported protocol ${protocol}`);
-    return {
-    };
+    return {};
   }
 
   return {
     endpoint: process.env.OTEL_EXPORTER_OTLP_ENDPOINT,
     protocol,
-    headers: protocol === 'grpc' ? {
-      'x-databricks-zerobus-table-name': traceTableName,
-      Authorization: `Bearer ${token}`,
-    } : {
-      'content-type': 'application/x-protobuf',
-      'X-Databricks-UC-Table-Name': traceTableName,
-      Authorization: `Bearer ${token}`,
-    },
+    headers:
+      protocol === 'grpc'
+        ? {
+            'x-databricks-zerobus-table-name': traceTableName,
+            Authorization: `Bearer ${token}`,
+          }
+        : {
+            'content-type': 'application/x-protobuf',
+            'X-Databricks-UC-Table-Name': traceTableName,
+            Authorization: `Bearer ${token}`,
+          },
   };
 };
