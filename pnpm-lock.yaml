@@ -3342,9 +3342,9 @@ packages:
     resolution: {integrity: sha512-K5zQjDllxWkf7Z5xJdV0/B0WTNqx6vxG70zJE4N0kBs4LovmEYWJzQGxC9bS9RAKu3bgM40lrd5zoLJ12MQ5BA==}
     engines: {node: '>= 0.10'}
 
-  re2js@2.8.6:
-    resolution: {integrity: sha512-xLgQil4kIUCrAzVk9fRSkxkFNwmygLFjVxXrLc65aE1F0+Zsb8rxumFBy4XKyvgMCTL6kilDq3EZ0piE2dP/Dg==}
-    engines: {node: '>=18.0.0'}
+  re2js@2.9.1:
+    resolution: {integrity: sha512-JIT3bEEUZTOR2YS1walNEIfH4cF/cQeZcBUFq7ldqO6lR6g0X5CBq/S8rsa9omzZcsNf8qc36jCkWpKKtncrZg==}
+    engines: {node: '>=20.0.0'}
 
   readable-stream@2.3.8:
     resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
@@ -4462,7 +4462,7 @@ snapshots:
       p-retry: 7.1.1
       picomatch: 4.0.7
       posthog-node: 5.55.0
-      re2js: 2.8.6
+      re2js: 2.9.1
       ws: 8.22.0
       xxhash-wasm: 1.1.0
       zod: 4.6.5
@@ -6762,7 +6762,7 @@ snapshots:
       iconv-lite: 0.7.3
       unpipe: 1.0.0
 
-  re2js@2.8.6: {}
+  re2js@2.9.1: {}
 
   readable-stream@2.3.8:
     dependencies:
