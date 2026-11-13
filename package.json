@@ -18,7 +18,7 @@
   "dependencies": {
     "@ai-sdk/amazon-bedrock": "^5.0.133",
     "@ai-sdk/provider-utils": "^5.0.75",
-    "@aws-sdk/credential-providers": "^3.1162.0",
+    "@aws-sdk/credential-providers": "^3.1163.0",
     "@grpc/grpc-js": "^1.14.7",
     "@mastra/core": "^1.82.0",
     "@mastra/duckdb": "^1.18.0",
@@ -31,7 +31,7 @@
     "@mastra/otel-bridge": "^1.5.21",
     "@mastra/otel-exporter": "^1.5.1",
     "@opentelemetry/api": "^1.10.0",
-    "@opentelemetry/exporter-trace-otlp-grpc": "^0.300.0",
+    "@opentelemetry/exporter-trace-otlp-grpc": "^0.301.0",
     "zod": "^4.6.7"
   },
   "devDependencies": {
