@@ -16,9 +16,9 @@
     "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
-    "@ai-sdk/amazon-bedrock": "^5.0.133",
-    "@ai-sdk/provider-utils": "^5.0.75",
-    "@aws-sdk/credential-providers": "^3.1163.0",
+    "@ai-sdk/amazon-bedrock": "^5.0.135",
+    "@ai-sdk/provider-utils": "^5.0.76",
+    "@aws-sdk/credential-providers": "^3.1164.0",
     "@grpc/grpc-js": "^1.14.7",
     "@mastra/core": "^1.82.0",
     "@mastra/duckdb": "^1.18.0",
@@ -39,14 +39,14 @@
     "@mastra/deployer": "^1.82.0",
     "@types/node": "^26.6.6",
     "mastra": "^1.38.0",
-    "oxfmt": "^0.76.0",
-    "oxlint": "^1.91.0",
+    "oxfmt": "^0.77.0",
+    "oxlint": "^1.92.0",
     "typescript": "^7.0.2"
   },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.19.0",
+      "version": "12.21.0",
       "onFail": "download"
     },
     "runtime": {
