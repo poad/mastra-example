@@ -39,8 +39,8 @@
     "@mastra/deployer": "^1.82.0",
     "@types/node": "^26.6.6",
     "mastra": "^1.38.0",
-    "oxfmt": "^0.77.0",
-    "oxlint": "^1.92.0",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
     "typescript": "^7.0.2"
   },
   "devEngines": {
