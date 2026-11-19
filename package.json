@@ -16,9 +16,9 @@
     "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
-    "@ai-sdk/amazon-bedrock": "^5.0.138",
+    "@ai-sdk/amazon-bedrock": "^5.0.139",
     "@ai-sdk/provider-utils": "^5.0.79",
-    "@aws-sdk/credential-providers": "^3.1166.0",
+    "@aws-sdk/credential-providers": "^3.1167.0",
     "@grpc/grpc-js": "^1.14.7",
     "@mastra/core": "^1.82.0",
     "@mastra/duckdb": "^1.18.0",
