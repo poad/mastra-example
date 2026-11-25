@@ -191,47 +191,47 @@ importers:
   .:
     dependencies:
       '@ai-sdk/amazon-bedrock':
-        specifier: ^5.0.142
-        version: 5.0.142(zod@4.6.7)
+        specifier: ^5.0.145
+        version: 5.0.145(zod@4.6.7)
       '@ai-sdk/provider-utils':
-        specifier: ^5.0.81
-        version: 5.0.81(zod@4.6.7)
+        specifier: ^5.0.82
+        version: 5.0.82(zod@4.6.7)
       '@aws-sdk/credential-providers':
-        specifier: ^3.1170.0
-        version: 3.1170.0
+        specifier: ^3.1171.0
+        version: 3.1171.0
       '@grpc/grpc-js':
         specifier: ^1.14.7
         version: 1.14.7
       '@mastra/core':
-        specifier: ^1.83.0
-        version: 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+        specifier: ^1.84.0
+        version: 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       '@mastra/duckdb':
-        specifier: ^1.19.0
-        version: 1.19.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
+        specifier: ^1.19.1
+        version: 1.19.1(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
       '@mastra/evals':
         specifier: ^1.10.11
-        version: 1.10.11(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
+        version: 1.10.11(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
       '@mastra/libsql':
-        specifier: ^1.30.0
-        version: 1.30.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
+        specifier: ^1.31.0
+        version: 1.31.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
       '@mastra/loggers':
         specifier: ^1.3.10
-        version: 1.3.10(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
+        version: 1.3.10(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
       '@mastra/mcp':
-        specifier: ^2.9.0
-        version: 2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+        specifier: ^2.10.0
+        version: 2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
       '@mastra/memory':
-        specifier: ^1.41.1
-        version: 1.41.1(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
+        specifier: ^1.41.2
+        version: 1.41.2(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
       '@mastra/observability':
-        specifier: ^1.24.0
-        version: 1.24.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+        specifier: ^1.24.1
+        version: 1.24.1(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
       '@mastra/otel-bridge':
-        specifier: ^1.5.22
-        version: 1.5.22(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+        specifier: ^1.6.0
+        version: 1.6.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
       '@mastra/otel-exporter':
-        specifier: ^1.5.2
-        version: 1.5.2(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+        specifier: ^1.6.0
+        version: 1.6.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
       '@opentelemetry/api':
         specifier: ^1.10.0
         version: 1.10.0
@@ -246,14 +246,14 @@ importers:
         specifier: 2.0.0-r.1
         version: 2.0.0-r.1
       '@mastra/deployer':
-        specifier: ^1.83.0
-        version: 1.83.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
+        specifier: ^1.84.0
+        version: 1.84.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
       '@types/node':
         specifier: ^26.6.6
         version: 26.6.6
       mastra:
-        specifier: ^1.39.0
-        version: 1.39.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7)
+        specifier: ^1.40.0
+        version: 1.40.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7)
       node:
         specifier: runtime:^26.13.1
         version: runtime:26.13.1
@@ -299,38 +299,38 @@ packages:
       express:
         optional: true
 
-  '@ai-sdk/amazon-bedrock@5.0.142':
-    resolution: {integrity: sha512-eOwZ14N8XmamP6hZPirRen+xS1F5563MIPBz8RiQiV/bbcxZvEepQKPe85QeKDm+NwiBVrCXEFS6dtB08vjjJQ==}
+  '@ai-sdk/amazon-bedrock@5.0.145':
+    resolution: {integrity: sha512-/5UDsv33Bo4cNMR4KShrSPch79WT9s+scDYgLTCLHvYRQmL+TQ1uhtaJ5WEY0cEPXCrJucL8JCDUjstegbVb6w==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/anthropic@4.0.105':
-    resolution: {integrity: sha512-i6kmv6y+FGTBxOPtLRrb5I+92WcFFGubhd33CD0JeaSyFOnLJ8my4a9olkAgyR9fACHMzxFBmoEHd0uO4i72bA==}
+  '@ai-sdk/anthropic@4.0.106':
+    resolution: {integrity: sha512-CKqIoPG91+uqmZxxxQEaS2anQlDxA+4UPeYB0TgcHAit1HZgx0m2y9JJ7QwJVYmgBuZHO1OXowMovV0kwvrTcQ==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/openai@4.0.118':
-    resolution: {integrity: sha512-pBsFeB+IudrX96P0ic9AO/1NPnfB6IyoS2B2pnhBJ/Ovt4bsvAmBOPeUxwEfYbQyfetJdVFep9sfYX42uVX3SQ==}
+  '@ai-sdk/openai@4.0.121':
+    resolution: {integrity: sha512-7rDVkDk/nTHlryx/gOglSDL0Zh1Hq7rMtEcVgRCDsKKf/F/CcIJ3RnCmudYeyeLyuDE5fEcZQAdaNWYgOuwvSQ==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/provider-utils@4.0.63':
-    resolution: {integrity: sha512-QSrfUn7pnb+2EZLLtpkcY6208ZZVi15QEJFyp/1jAYEH2UecthgAsyYWOJbpMSLtraviCByd6ii2meISIhkTZA==}
+  '@ai-sdk/provider-utils@4.0.66':
+    resolution: {integrity: sha512-tITCIYBJlxD4PmDIAI2VXb67yEbWRepvJBJrv2pIY5vMRUta51AFRxLlxm0IexRGdIBGuQ10+ClClZMXtawkbA==}
     engines: {node: '>=18.17'}
-    peerDependencies:
-      zod: ^3.25.76 || ^4.1.8
-
-  '@ai-sdk/provider-utils@5.0.72':
-    resolution: {integrity: sha512-M6QAztI84jWumQSvKcGOL91DxhChsWxn3D3gYtV0/7E1TPQg9BmLdIerOolUC/jghQbMlQrHyzp0hqdIhUZ2Rw==}
-    engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
   '@ai-sdk/provider-utils@5.0.81':
     resolution: {integrity: sha512-pfvvdQ3d1WxdBuug/mnGEP6E48cPokwD8dMBnsFeeAUp0/rb/H2aj0f3mwOiY62gu/Cu5GO44e+SE5nDHyBWMA==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      zod: ^3.25.76 || ^4.1.8
+
+  '@ai-sdk/provider-utils@5.0.82':
+    resolution: {integrity: sha512-9s3Le9LsTR0exy14H8SERw4uMgFhiP0yJVoLefzfQCnnptj71noYh1AoVEsjfJjmMH1y16+1OqBVTDpTpU6M3Q==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -343,12 +343,12 @@ packages:
     resolution: {integrity: sha512-5lWq7zSfRaU5ylDESn3sDQjgGl2AI1vjZKO/6JY3aFW70ct4zcP1kN+ZUYOuTXr28fVsYbyu2YFhddLdIgQFZQ==}
     engines: {node: '>=18'}
 
-  '@ai-sdk/provider@4.0.35':
-    resolution: {integrity: sha512-yBz6fmLS8MSCIzy7NiHEUAq56ZLD4ZA1GR6bpXBxgbwUacP1La7LuwAr/xy9jSzthem4F8Xu2OrhvU/JrE9fYA==}
-    engines: {node: '>=22'}
-
   '@ai-sdk/provider@4.0.38':
     resolution: {integrity: sha512-GElz70UUCuDFFyD6m6aQJFgRY0HEABQzB5otzgkrisYaF5mnss7o0upAmbBTSD6KWiM9h7lZm1ls2c7xzHR8CA==}
+    engines: {node: '>=22'}
+
+  '@ai-sdk/provider@4.0.39':
+    resolution: {integrity: sha512-jRvAhvW23+TeMGVCME2WGejP/TjzyDg7TplUep3t8HcEYnC2/8zqhCy9RRrjjVs1ljcygABZ8pQ21MbCRdF01w==}
     engines: {node: '>=22'}
 
   '@apidevtools/json-schema-ref-parser@11.9.3':
@@ -395,8 +395,8 @@ packages:
     resolution: {integrity: sha512-duLeE3xlf0viHeH+1RM4z5duR3b32BCZTWVMu+MbxFPjQBxy7hmIGEqt5hekuFPRuXoyhMovjNl+PNNsb5oiGQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-providers@3.1170.0':
-    resolution: {integrity: sha512-ul2hR0hFkpeNZdmFU1tdeE/fBugO6FEYB/h2pwIiNZSZM8uIGmZGeSmXSHBRmnMdyr3V7mC88Ki+vNZVOcfSUw==}
+  '@aws-sdk/credential-providers@3.1171.0':
+    resolution: {integrity: sha512-qYle3d+uQVo/DJNLDf+MC/8CHql+R8cR9lrJoEPzCU2IQ606YCGEPFj0AqEOpLE5IKEuzs020ngZghAChovZUw==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/nested-clients@3.998.3':
@@ -938,8 +938,8 @@ packages:
     resolution: {integrity: sha512-qC72D4+CDdjGqJvkFMMEAtancHUQ7/d/tAiHf64z8MopFDmcrtbcJuerDtFceuAfQJ2pDSfCKCtbqoGBNnwg0w==}
     engines: {node: '>=8'}
 
-  '@mastra/core@1.83.0':
-    resolution: {integrity: sha512-dlwmVDN6duLn7WSTEzrPzUIsgQ3OL6ZezNKs0JPuBKwQpwJsAHb2sdB6MiDxA/H/8sc9BN8IVwfvn41TPZb8IA==}
+  '@mastra/core@1.84.0':
+    resolution: {integrity: sha512-0Ko51xP2R5BN5QBSzdMX5b2IKthElMzgKYfmTzumPqnHYcP1I5PoSRuHj/u8wx9m5UKl0ECc6dHpkjiOYO3OxQ==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@json-render/chat': ^0.22.0
@@ -948,14 +948,14 @@ packages:
       '@json-render/chat':
         optional: true
 
-  '@mastra/deployer@1.83.0':
-    resolution: {integrity: sha512-ZWkW293DykpvAezLkGERSC9b+fOy9Hc1mHGlUTZr652cQJuUwA9Xl9Li2H9alETUeUkLI/qRZn6nz6ZkjCk2ow==}
+  '@mastra/deployer@1.84.0':
+    resolution: {integrity: sha512-mwKB3duOJrvXBTdRgt/lQbMidigSSg9fqqZi0Cq2kqT0VIGp8/N7wEml1fdVvBYj7Ia3KFTI6HlGocsHiyGDZw==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.83.0-0 <2.0.0-0'
 
-  '@mastra/duckdb@1.19.0':
-    resolution: {integrity: sha512-QXAlibUrLMgpZrngAohznO1Hsxn96EwA2X4eSa4ZUSprs5AQazzGY8ck6tHOx8cVfpxbcLhzGgK1NZHitQZ44A==}
+  '@mastra/duckdb@1.19.1':
+    resolution: {integrity: sha512-SQJDCnxqGzXW0MvppJwlIV0HK9fjp8Dz1DikhxN9MW9KVQZHZ3z7pPZ8v/xsBzPldgT150mCj6GSn770OZsVsQ==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.80.0-0 <2.0.0-0'
@@ -970,11 +970,11 @@ packages:
       vitest:
         optional: true
 
-  '@mastra/libsql@1.30.0':
-    resolution: {integrity: sha512-gPRcylPZG8QfgU8MJeiYUrJxa3Yy0NXwkedp9nYfO0mlfVUlxQWLnvKsQnvG+JXnTYSjDefKwkQm6YzIRxccaA==}
+  '@mastra/libsql@1.31.0':
+    resolution: {integrity: sha512-5KV0Ay26S9IBdJHuvg2v5xvz1/B/GBm1Tjs2cPItjpsp8zdCcgSfFsK23r/kom2/MoJScVFavUJvRbZJycf+2g==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
-      '@mastra/core': '>=1.83.0-0 <2.0.0-0'
+      '@mastra/core': '>=1.84.0-0 <2.0.0-0'
 
   '@mastra/loggers@1.3.10':
     resolution: {integrity: sha512-gpUpNh5mIH//SgKENtZQ/qlBMNrZgzyzKHKswF4aIijztKLc03u1rBB4yFV4wO87r0E33OVCjw10mHxyMuWkCA==}
@@ -982,29 +982,29 @@ packages:
     peerDependencies:
       '@mastra/core': '>=1.0.0-0 <2.0.0-0'
 
-  '@mastra/mcp@2.9.0':
-    resolution: {integrity: sha512-4ZRHPK9f7HY0tjnxf+6qReYovf8mhXLupjYEq5ffEVYdFvybVNKcN37XYyGiAU8vGm01/FHLqUZSUAv/1r/f6Q==}
+  '@mastra/mcp@2.10.0':
+    resolution: {integrity: sha512-nNzUmXSZ0GAKBmLiWYQLYzn1ByQAzrr6vdvFJwiazzqnXCpNJhnJ6q4QvUoQca53ulISha8OXaeNLAP5fVwfjA==}
     engines: {node: '>=22.13.0'}
     hasBin: true
     peerDependencies:
       '@mastra/core': '>=1.83.0-0 <2.0.0-0'
       zod: ^4.2.0
 
-  '@mastra/memory@1.41.1':
-    resolution: {integrity: sha512-HHuoYk/I+t4IbEujFHZ6AgqSdkqwypZ8rTVTa331TKbxH4F42GscLlu0+8ancU0zr2S7R/1Iu7Qo0ZSn68DHNg==}
+  '@mastra/memory@1.41.2':
+    resolution: {integrity: sha512-dkDg2OcUT9vigYjOnEVqHaT4ytaGHoOf7bzP86IE1eeufDW/G3V7BcpY/rVjtJl+8bF1ZPWgsM0l85pTfwcTKw==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.83.0-0 <2.0.0-0'
 
-  '@mastra/observability@1.24.0':
-    resolution: {integrity: sha512-BRuMoIM3hoCr819iezIDdSzz29cBSbsihdAC/fY5a93DvjM7aH4aZzysUCw/suNShMaBxEEnUj4Wt8Q/b6xEqA==}
+  '@mastra/observability@1.24.1':
+    resolution: {integrity: sha512-6i5clRPOkx5DOqj1D3ze7u47jin3jfvS74kptfFzrHJuJlO6YvhqiVQbCoxenCRJ41/JHQWjVl5PMZTdMhnPmQ==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.16.0-0 <2.0.0-0'
       zod: ^3.25.0 || ^4.0.0
 
-  '@mastra/otel-bridge@1.5.22':
-    resolution: {integrity: sha512-/rGFhrxSOJjQ7RgZMQz4GcIVcYCiu7M26CX8a7gwFzB12Vy4F3yIcgm1gi/ssHzpql2gTFyyD+7j6+oRKj+QdQ==}
+  '@mastra/otel-bridge@1.6.0':
+    resolution: {integrity: sha512-dminHY/d3pwdloEk7bxTcp8cd1n3d4iGgG/tL3pTFINCiyEP5Q6iGqvu9wIMkUKxK1vyw4ErrrNaH7vvwMvPAA==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.16.0-0 <2.0.0-0'
@@ -1016,8 +1016,8 @@ packages:
       '@opentelemetry/sdk-node':
         optional: true
 
-  '@mastra/otel-exporter@1.5.2':
-    resolution: {integrity: sha512-WZ5Ky3CL8RcJYvpXze6K6OzjB9JZVawSSimrLQIT5nAZQ5udCg3bHb567jekxUmVTjeSIP9gXX2KqoLsoHzDzg==}
+  '@mastra/otel-exporter@1.6.0':
+    resolution: {integrity: sha512-DML4LicfEuQCC3Xi1nppoBDI24TpExHi4oY92Z+qC1nRg0rBWrPt9HqY32t6d70sr4tjE0r9n7rRlmaYHyfdBA==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.16.0-0 <2.0.0-0'
@@ -1028,15 +1028,18 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  '@mastra/server@1.83.0':
-    resolution: {integrity: sha512-avwAY4cUc7scQU015aLFRAFHaHmIv/id2aTxP4Y/Hyj5uPRbvIQk+zVo5XrVNSUH4ThyE6HTkb/+EwmiH8WVfA==}
+  '@mastra/server@1.84.0':
+    resolution: {integrity: sha512-DV6IJ7zUYT/oj8ODZ5bKenosCnuFAPL9qSmPUR2ZXksrpi5LDJz6FLfa40vZXv5l3aeMZdj4xXnunpxP7e/1gA==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.83.0-0 <2.0.0-0'
       '@mastra/mcp': '>=2.9.0-alpha.3 <3.0.0-0'
+      '@mastra/mcp-apps-components': '>=0.1.0-0 <1.0.0-0'
       zod: ^3.25.0 || ^4.0.0
     peerDependenciesMeta:
       '@mastra/mcp':
+        optional: true
+      '@mastra/mcp-apps-components':
         optional: true
 
   '@modelcontextprotocol/client@2.4.0':
@@ -1541,8 +1544,8 @@ packages:
     resolution: {integrity: sha512-3fhvdnSFTcLGgaVIISc+269N4j2ugpUsiRErdT+M2vyOc0b3Vgs2mvSPdFyq2insCL4vFLiHOZxg7SddSFjMTQ==}
     engines: {node: '>=22.13'}
 
-  '@posthog/core@1.68.0':
-    resolution: {integrity: sha512-5kjPcLquzj47qBGn52+7RRXrJJvrTHaRKgxV9izYPFzoVFEftFqSXYZF/ug+yialxDU73dR9apyi+mSaAeaXPw==}
+  '@posthog/core@1.69.1':
+    resolution: {integrity: sha512-36hlJRZlVh5d+yBOmqObT162SrqNes9yY4x4wLDXVSu5Dzdt19KNxQ136cd37+U0yABZVx7ehjtWslyn1iG+0Q==}
 
   '@posthog/types@1.425.1':
     resolution: {integrity: sha512-mh7jyQ5lN+XCeOnMdYkBEFtO/G0TxeLOKTWNH6E6OZjxS4nVM0Tb2xQt+FG5DCFM9qzL2HmuX6A793TwlJVDvw==}
@@ -1637,146 +1640,146 @@ packages:
       rollup:
         optional: true
 
-  '@rollup/rollup-android-arm-eabi@4.68.5':
-    resolution: {integrity: sha512-4iPGohjhOlA8ovAwOrHcbsLFw2X0lG49y2iWSlyLrRLJMO47D+XNM930CcGVQKPUpCsDfCdK3BV0y1ki6OBdhw==}
+  '@rollup/rollup-android-arm-eabi@4.68.6':
+    resolution: {integrity: sha512-TDFizbE5Ic3YCZrFF2zfodXsmRRbcwkc0PvCjo9gi+i9NVtSYdH52imwXUDCUeNTuc56p0KI+Jp8FA3QMRGdZw==}
     cpu: [arm]
     os: [android]
 
-  '@rollup/rollup-android-arm64@4.68.5':
-    resolution: {integrity: sha512-mBK6NsYThYGRkGy8uX7fODOIT0YHz9UyvtYv/fhqdfEZw8Sg2kPiuUsQ8OmzRfq5ve0nHqZVDz2zLOy1xVaVzQ==}
+  '@rollup/rollup-android-arm64@4.68.6':
+    resolution: {integrity: sha512-TBNzo00RawX2V+VxTcIbrUal2RlmtNOZTqsMZwwohSh568+UzKEQyQlLndhmQqGufd4zC0s/xauyDH2DFQGazw==}
     cpu: [arm64]
     os: [android]
 
-  '@rollup/rollup-android-x64@4.68.5':
-    resolution: {integrity: sha512-8D/A3B5bsLlBcVGsUN+IWcA0wreB+Fvmvs3PLBHyEq3itxGefdPsubG/tPHvezUKPTDAh05YoutzsVFDxkcrJQ==}
+  '@rollup/rollup-android-x64@4.68.6':
+    resolution: {integrity: sha512-VdtOfxpuSmLuCVpsolouZJgxT+KakjeuQnGuLRgm9qNGnSbbVzotq96aYgw0g9DdC+382tFo+WXCWy02YrLbew==}
     cpu: [x64]
     os: [android]
 
-  '@rollup/rollup-darwin-arm64@4.68.5':
-    resolution: {integrity: sha512-xJVTzKZnwwQsQ5WA9cV4Q8l1SVYF9UyVa/3ECoCFfgtow4MUt7HcI3AB8Hwa/4790fimHPXzYfsuyMp67ErQ8w==}
+  '@rollup/rollup-darwin-arm64@4.68.6':
+    resolution: {integrity: sha512-r7F+3ALvYv2Zh2chzYlYwTqgR96IcjK5CFukcQdl1ljnzO/sNdk86ejkKFveN3CbK8L8YlbdeOja44aq1L5jgA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rollup/rollup-darwin-x64@4.68.5':
-    resolution: {integrity: sha512-0Ft351J6xgaXhBtsRtV1qC1iFRSGzOoEpqbfIw5kPA1/R2ldOON8IVHx15XK6X46OI1QvxkETmWT+BIQxfHiOQ==}
+  '@rollup/rollup-darwin-x64@4.68.6':
+    resolution: {integrity: sha512-4f4MBaFbHnqBBiDh/6NuKHMCKHalV8E++VIqgtCZ170lw4VzTfHCNTfFRNy2BxaBBkO1kDpolJfEt4JLHNWRww==}
     cpu: [x64]
     os: [darwin]
 
-  '@rollup/rollup-freebsd-arm64@4.68.5':
-    resolution: {integrity: sha512-crcRf4EJ792/UuuPf8QduPogDOS9t6E7Mlkvgk8KSBQ/r+ZYyL4VKLEg4GmNmz4AUjq/Mr+4fHJ/RqtCFXq47w==}
+  '@rollup/rollup-freebsd-arm64@4.68.6':
+    resolution: {integrity: sha512-2wT5m6mt0GnKvaQNlmkqmdaMVvpvldtjXu75ODyxicYIZokadSWD4OCt/jj8YLqERpB8HeJK+OyC2wjpDMXpCA==}
     cpu: [arm64]
     os: [freebsd]
 
-  '@rollup/rollup-freebsd-x64@4.68.5':
-    resolution: {integrity: sha512-6SrbCoHnaFiipnX4TsDnQ74Zd8puOFQma6WdXDvnh0/Oy5Ash2RbNbeOdfbQNQOyNZe65eAg/G/U+EOoaR284w==}
+  '@rollup/rollup-freebsd-x64@4.68.6':
+    resolution: {integrity: sha512-1BdUbZWqoaaFUcPKNHVsKVzeHeVY0F1A0a1uaCopQhz/0jXVPeC+JI1cOZkLSR2mumT11qEubrxA0IM9uecofw==}
     cpu: [x64]
     os: [freebsd]
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.68.5':
-    resolution: {integrity: sha512-Du8EftwTEY5i9H/VmLrvHrv8W4WpnLSvlT4/th5zQR10baXOQM/8Vn+q4MkNZrWwwulUuhuAUItevugalTNCLA==}
+  '@rollup/rollup-linux-arm-gnueabihf@4.68.6':
+    resolution: {integrity: sha512-MgtBdogIGR8qRMQY8d+Wq67ADYKfci7PdzyWsduCRsgdMDdQ/5idEwQJP3yDs8t3AbV1bk8BovKJrH48EKmhDA==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-arm-musleabihf@4.68.5':
-    resolution: {integrity: sha512-eT4t5h+qexha98N75YpiKMY1XDfimwkVL4TCHgQXr3JRFEqRacd38ldXB7dAAi5G62Mkuxlvw7VBHe5UXY2UHw==}
+  '@rollup/rollup-linux-arm-musleabihf@4.68.6':
+    resolution: {integrity: sha512-NWFCiyEk96y3EE03yO4Tgj2dVzgHnMQ1dHho3HUZdzsf+zBjCpumTA0YT5z2ndZaNFvHJPmiyT4d7yXwbvaaiA==}
     cpu: [arm]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-arm64-gnu@4.68.5':
-    resolution: {integrity: sha512-jUsTbXqgd+cJlwgKePc56J8Yie+JZRWl7xiViSR2eQuloZ26PzWCS7ZJrCEZRmY7vrqhnvnbj6fP1ikinE0dfQ==}
+  '@rollup/rollup-linux-arm64-gnu@4.68.6':
+    resolution: {integrity: sha512-WCGpkloY1hQp8qFy91wTriZC0jfVkGx/NPrU1Nz/Ui6MsdFI+Pdu9vBiSemIwd+jHF+MjJTQelVzfOT1RSAkig==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-arm64-musl@4.68.5':
-    resolution: {integrity: sha512-HHjSkN3VAI8ZD45xEO4WcV5+yUB04vpR0r5g0ayLX8YfafV61hAIWoh8Qa22HujnxEtOXYDstF4qKbWGicI2RA==}
+  '@rollup/rollup-linux-arm64-musl@4.68.6':
+    resolution: {integrity: sha512-Dzqr4rcbaGvpIzd6p11gpIqtEQX3QO3u7tg726SNSCSpstwejC8Emk4lRN4CqmUlEtH7gfBi63o1ClqjW28XQw==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-loong64-gnu@4.68.5':
-    resolution: {integrity: sha512-Y//CvF+v/RiwP6ZscB23xFU+x8BtSbRpwEnVb6140X1TBqSjrZwQwdH/hRCG2FKBaUF2sWsOVjdeZ5UmsF5Cqg==}
+  '@rollup/rollup-linux-loong64-gnu@4.68.6':
+    resolution: {integrity: sha512-Rn8Tg6V+tamTIPKMAfjWhFGU31U2iTYbOBaCRNepupobGYdRSjALA/fDz0/U2uoWp5jXOKYk+42I38tc0NOeew==}
     cpu: [loong64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-loong64-musl@4.68.5':
-    resolution: {integrity: sha512-O3fyuDSEV+sXQNTfVfZFPCdc5QymYVxS4PT7YXxsouO/LZhmYy8y6xNZJx9tBQCiR96c2sBfRNLRztkhnvahcg==}
+  '@rollup/rollup-linux-loong64-musl@4.68.6':
+    resolution: {integrity: sha512-TD6m6LcCTjbwydIIylRCaUwfFbey+vphXvGeubtyxaMiYZbCrLvWtDloSdXpWVJTvHEqE+0o3j7nMqgBdsrCdw==}
     cpu: [loong64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-ppc64-gnu@4.68.5':
-    resolution: {integrity: sha512-xIzFIoRROEVGJZBc/ljGteOcF/sA6Hjuz+x3zHNdcFc24xlVenPm3RPTOJfNvNVF0MZTyfGq1YYIhG4Tj/nYiA==}
+  '@rollup/rollup-linux-ppc64-gnu@4.68.6':
+    resolution: {integrity: sha512-kSiyetmVcKpXg5QuqlJG/Tj1cDRJDQnMHESYj/KZMvWxjG9beJwZe3edPkaBJF9qCtXfwzwDsjg+x0XNV/negg==}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-ppc64-musl@4.68.5':
-    resolution: {integrity: sha512-srRfsMFnBDxlmpXwlStiwUSQ/4jCbR4u4i52pZg+bV+Anni0V5EmDeHGZ4YbmTIvM+XhcvEecFcjHmZWFWzVpA==}
+  '@rollup/rollup-linux-ppc64-musl@4.68.6':
+    resolution: {integrity: sha512-F53Un52pSB5NodQI4sbMgbommV6UJwyuL6yyoTtCam5gdDe/ys/qoyNoUJOQ2ZV7Vcq3gJQ78E3fLYUBRE7isQ==}
     cpu: [ppc64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-riscv64-gnu@4.68.5':
-    resolution: {integrity: sha512-hkrVfI5WMnWaZg0vaM8DlJCRlIUhaRa3Z2BT99AuFl739uIcOnnvpYr7kVhUiPuCvHvWEPgExtXtgNRpBDuxbw==}
+  '@rollup/rollup-linux-riscv64-gnu@4.68.6':
+    resolution: {integrity: sha512-eyniKw3s64oaL7FKbso5GlBWqyrnN0Vidm2P8hNwZY7HJSAoweDlC94b1ZFCRNODy0l/bqzlQhSr5nXE0uK89w==}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-riscv64-musl@4.68.5':
-    resolution: {integrity: sha512-ZWDUe13obQhNg0qD1pkft3aWBZgDD26TO3ADvuJ2T9SN/T3h632VRVc+GDCjgRzEnd8a8yCOkl9opkkTPxhF0Q==}
+  '@rollup/rollup-linux-riscv64-musl@4.68.6':
+    resolution: {integrity: sha512-sWtxf+kwM+HbAVRkiiTKfYp1RvWaI/ctISSmbni55zpY5a5VBdjJL3RwN+gB/9HTkRC1khZl0vdURoBAXZUshA==}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-s390x-gnu@4.68.5':
-    resolution: {integrity: sha512-9TsAn9NJQv5NsyGS4yOmJZGlM2ASrzQXC6pc6hrjduk5QwtoapONtooLiDSJlPq6+IAwhS2AdJ9+B8tidcdh5w==}
+  '@rollup/rollup-linux-s390x-gnu@4.68.6':
+    resolution: {integrity: sha512-vWfNmTP9HGrDIDUIJK9SFRdKNB+Xhv1PWiOKg/97R0MmrkQXAGMpAF1w50jSZNLz4Ra7WAVOFEpb7sAcvvW1fA==}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-x64-gnu@4.68.5':
-    resolution: {integrity: sha512-JK5S9YhArjVwuetZ9nf6/GdpiXLl7DAVTdRUpF40wVMQNq28hkBrQI1+xy9sqjqtPvW08xagGPfBCBj5wLerZA==}
+  '@rollup/rollup-linux-x64-gnu@4.68.6':
+    resolution: {integrity: sha512-O+C505KYTRgQp/CF6p7XUzZGB4/pQAZTCj/edTDEXXE3wTKtAgNDXWX/5IcIZ/JQYaE8+iRLGoekmBv9XTz+PA==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-x64-musl@4.68.5':
-    resolution: {integrity: sha512-pF0UxfDULcfZhdp5azfIvTW5c++AYjYs0Q8iTCzVCVzVH9+9e0Ah0vIZS3MIZbO7GoyPjTuPjAcUgQQvYbM81A==}
+  '@rollup/rollup-linux-x64-musl@4.68.6':
+    resolution: {integrity: sha512-EGeTTPGYqkt2qoEWgE1ahiuQDPTpeEv+qXLh4JRaWEhneGdvpqE5G3wcWR4VzJdykWz76ZsZD4UFf/wkFSAMLg==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-openbsd-x64@4.68.5':
-    resolution: {integrity: sha512-5bkgrD3xTj4pVAaKZ/D+GBWfWaJtorYRdj8i7nHcCsalDaIgiGVmCb/KucTO8P80UXCcPnqMJGcCS4xM94qsbw==}
+  '@rollup/rollup-openbsd-x64@4.68.6':
+    resolution: {integrity: sha512-fHTZCMwe6Ws0ErKJmM1aE+NC+YruV/E4Y7B4mOYFkQYgOxbAjCeXJIfTt9jpOziVsZw6z5uuQQPG9MRCz3htqw==}
     cpu: [x64]
     os: [openbsd]
 
-  '@rollup/rollup-openharmony-arm64@4.68.5':
-    resolution: {integrity: sha512-Fu+Jd8JWALOrVQdXTBfqUgkDXqWYqWAfjrpvSuvqYOVaSfwwi2wc9TORUEbbyd/8dsAmHLi04K9FnIwnjvWoJQ==}
+  '@rollup/rollup-openharmony-arm64@4.68.6':
+    resolution: {integrity: sha512-DlrAKng5/Q0dLONKhV42LdIBaBwsNIibsT+Ye6+q2wals5/4N7HUtHmgIxGmQAZtBYpNKf+DpFoULvMSQmtyoA==}
     cpu: [arm64]
     os: [openharmony]
 
-  '@rollup/rollup-win32-arm64-msvc@4.68.5':
-    resolution: {integrity: sha512-WX+jUzphTWxca8eKMPtNSTW58aW6TxScbKQ3Tc0Nagjwrysy1Bu0Wl7BUt5STCPB+WM0EisGFFAyjfZ952f/JA==}
+  '@rollup/rollup-win32-arm64-msvc@4.68.6':
+    resolution: {integrity: sha512-H65qpoBVVfymEP4XrDOxDBvXQYdJ1MB2mEmnqPL5Msp6qi7oOUa9wscymiJTqKksZoAgdmf9hlcHAeL5ZujMkg==}
     cpu: [arm64]
     os: [win32]
 
-  '@rollup/rollup-win32-ia32-msvc@4.68.5':
-    resolution: {integrity: sha512-z7EKzmD+jJQ3/ISVQSBkLptuUhtYcPf9Vamg8Ovf2jnZMN/Zvf5xCxHPh+TWPoUx9knc1al4EIOi6c9XayVXyQ==}
+  '@rollup/rollup-win32-ia32-msvc@4.68.6':
+    resolution: {integrity: sha512-aUE6+JAOzD68OA8EjkgHoVZrUeQuh6iKoZfqRf4PwSj18HMDdcVDFa81EvlVoXscje6zI4kUG3Gg7WnlwdiUyQ==}
     cpu: [ia32]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-gnu@4.68.5':
-    resolution: {integrity: sha512-VnHYErHaF8wRwdvq0A92NHmE1/u0sbuSgyTgGyOrH1vO14GWhu9aXERntg9SPnZoyK/LM+X4YawBE4g1FNkLBA==}
+  '@rollup/rollup-win32-x64-gnu@4.68.6':
+    resolution: {integrity: sha512-pmmS2XZv4aaI7KPu4YjCVZsjhUH7JS5Pf7IaCMn2tc3wWMJFTz4FeItjmUXHOauCkFgQMYMrzeqgZrleT15S8Q==}
     cpu: [x64]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-msvc@4.68.5':
-    resolution: {integrity: sha512-gVfBrzSqeYl0/QRJegeK9njmGxojS3oiU9cAHNY0wU22AjS44dGzt4WnnuYsTCNO8P40H4Ulykg8cxq2zWWo9Q==}
+  '@rollup/rollup-win32-x64-msvc@4.68.6':
+    resolution: {integrity: sha512-DkUnrmo6oUZPDK6O6LOXLcEx8BZ85I8qkJLZWoSaOBHPqJfYzTtqweyoSxPpePG7XQvFkFEcSgVvHWRnuiXIcw==}
     cpu: [x64]
     os: [win32]
 
@@ -2329,8 +2332,8 @@ packages:
     resolution: {integrity: sha512-ZMAvlcu4AfmtJ4K/0hs0uofVUZPSeLG/w4yOyZawQLl9YEy8iDKIxIIPsUAlS907clC7bgD17e73vi5unwNE/g==}
     engines: {node: '>=12.0.0'}
 
-  electron-to-chromium@1.5.487:
-    resolution: {integrity: sha512-qWotOhQYeYEj+DK4+Y+cfPj44qiC6ETIiWtJLfmDJydED2BJJ7loPA4SfBbbrMI6X/X3tryJgxnY9nxsO545Zw==}
+  electron-to-chromium@1.5.490:
+    resolution: {integrity: sha512-I0dPyEsiaYAlbGJlr0SdRRGSWk9BpOz8AIo/4f93A6bAGuN3YafmT71rpss72SA05isaAkcAOYcW0F0H48om4Q==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2560,8 +2563,8 @@ packages:
   jpeg-js@0.4.4:
     resolution: {integrity: sha512-WZzeDOEtTOBK4Mdsar0IqEU5sMr3vSV2RqkAIzUEV2BHnUfKGyswWFPFwK5EeDo93K3FohSHbLAjj0s1Wzd+dg==}
 
-  js-base64@3.9.6:
-    resolution: {integrity: sha512-LjkzbLtU6Lx6fjXMYGEACEB7rdtqZtxkBe9aS1ZpDNUyWgUivw3yBEIhQ37OVygJYRt+C+9e9fVT8PpFzH2Hww==}
+  js-base64@3.9.7:
+    resolution: {integrity: sha512-UT2XYOCbXOXYoymbytretRDFnb6E6vYPqC1blehA/alnG6vRC0mNTQ6ijXYAPtiCG9o1FDNJXJvQtCwbChFDRQ==}
 
   js-tokens@10.0.0:
     resolution: {integrity: sha512-lM/UBzQmfJRo9ABXbPWemivdCW8V2G8FHaHdypQaIy523snUjog0W71ayWXTjiR+ixeMyVHN2XcpnTd/liPg/Q==}
@@ -2641,8 +2644,8 @@ packages:
   markdown-table@3.1.0:
     resolution: {integrity: sha512-xpeSCdM+B+6P3ncfgaB7FoDbtJ30xAe6Z18TGT7AgXJsHqCElCICZovQqdRMm7kHgpTyYv36EupqewoFFSB8vw==}
 
-  mastra@1.39.0:
-    resolution: {integrity: sha512-tT/HleOkP40umTyihFl9c1hTcqgGF3JXIwiM831iTd+IqIkd7neVbWGRfWYYOIBOZWqKYXv6Mxj00cKdGjRqZA==}
+  mastra@1.40.0:
+    resolution: {integrity: sha512-k3LK88pqD+wgWxDZugdLk9uF0N3tCDOToqRI1bwhZ9vpVHIDSZWPYR0765UzglGGPAV8PRnwSOaN2Joj9aBFfw==}
     engines: {node: '>=22.13.0'}
     hasBin: true
     peerDependencies:
@@ -3137,8 +3140,8 @@ packages:
   remark-stringify@11.0.0:
     resolution: {integrity: sha512-1OSmLd3awB/t8qdoEOMazZkNsfVTeY4fTsgzcQFdXNq8ToTN4ZGwrMnlda4K6smTFKD+GRV6O48i6Z4iKgPPpw==}
 
-  remend@1.4.0:
-    resolution: {integrity: sha512-mHiYhhwphs1IgIZmkToKLwJn0U99IjPXuutkA2acrNcG0vlEq2G4TGnd2eT0saIHwh2KjaCpvleHcsd5SAz96A==}
+  remend@1.5.0:
+    resolution: {integrity: sha512-A65+1l1jPGiZZsLD6QqL7foG8KBK2xMIjlr5Vm8R3kGAnVinjxFhdhHf3/zU5wPHrrsC87KqHztG7p1TD5i1HQ==}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -3167,8 +3170,8 @@ packages:
       esbuild: '>=0.18.0'
       rollup: ^1.20.0 || ^2.0.0 || ^3.0.0 || ^4.0.0
 
-  rollup@4.68.5:
-    resolution: {integrity: sha512-m6toRYCueVCY+5aEIriX7Dc36g3EHzn3Wk7xCW5aGgCQtTo4uXLZiZPNhDFMmPfVSvC92y3wEwIP2DCUp/ukXg==}
+  rollup@4.68.6:
+    resolution: {integrity: sha512-IUpi5I3j3DOcm9FwfIB4zpH2W943bEDHo8uhQddG37wglI6CaMXqk/YIr5Z+6WVh+QtnPU9gNiwCkSyoCtcdJQ==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -3314,10 +3317,6 @@ packages:
     resolution: {integrity: sha512-EvRlUt/QqAEvXdQeRMYUfwOQsfzpDztykrG2owGEE/rBOBoYv9uF39ZzsNDh4lTFHhTr2XOZjKkYgueD12ZmGA==}
     engines: {node: '>=18.17'}
 
-  undici@7.30.2:
-    resolution: {integrity: sha512-mLyPQnHwUxaM/rideoK/+KL8DaAJLRl4aBCfmX444aCSLnIaomqPLtNRe2jdCYcsk5wZzXrDIQC8ZeYNRAYyIA==}
-    engines: {node: '>=20.18.1'}
-
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
@@ -3452,30 +3451,30 @@ snapshots:
     optionalDependencies:
       '@grpc/grpc-js': 1.14.7
 
-  '@ai-sdk/amazon-bedrock@5.0.142(zod@4.6.7)':
+  '@ai-sdk/amazon-bedrock@5.0.145(zod@4.6.7)':
     dependencies:
-      '@ai-sdk/anthropic': 4.0.105(zod@4.6.7)
-      '@ai-sdk/openai': 4.0.118(zod@4.6.7)
-      '@ai-sdk/provider': 4.0.38
-      '@ai-sdk/provider-utils': 5.0.81(zod@4.6.7)
+      '@ai-sdk/anthropic': 4.0.106(zod@4.6.7)
+      '@ai-sdk/openai': 4.0.121(zod@4.6.7)
+      '@ai-sdk/provider': 4.0.39
+      '@ai-sdk/provider-utils': 5.0.82(zod@4.6.7)
       '@smithy/eventstream-codec': 4.5.2
       '@smithy/util-utf8': 4.5.2
       aws4fetch: 1.0.20
       zod: 4.6.7
 
-  '@ai-sdk/anthropic@4.0.105(zod@4.6.7)':
+  '@ai-sdk/anthropic@4.0.106(zod@4.6.7)':
     dependencies:
-      '@ai-sdk/provider': 4.0.38
-      '@ai-sdk/provider-utils': 5.0.81(zod@4.6.7)
+      '@ai-sdk/provider': 4.0.39
+      '@ai-sdk/provider-utils': 5.0.82(zod@4.6.7)
       zod: 4.6.7
 
-  '@ai-sdk/openai@4.0.118(zod@4.6.7)':
+  '@ai-sdk/openai@4.0.121(zod@4.6.7)':
     dependencies:
-      '@ai-sdk/provider': 4.0.38
-      '@ai-sdk/provider-utils': 5.0.81(zod@4.6.7)
+      '@ai-sdk/provider': 4.0.39
+      '@ai-sdk/provider-utils': 5.0.82(zod@4.6.7)
       zod: 4.6.7
 
-  '@ai-sdk/provider-utils@4.0.63(zod@4.6.7)':
+  '@ai-sdk/provider-utils@4.0.66(zod@4.6.7)':
     dependencies:
       '@ai-sdk/provider': 3.0.19
       '@standard-schema/spec': 1.1.0
@@ -3483,18 +3482,17 @@ snapshots:
       undici: 6.29.1
       zod: 4.6.7
 
-  '@ai-sdk/provider-utils@5.0.72(zod@4.6.7)':
-    dependencies:
-      '@ai-sdk/provider': 4.0.35
-      '@standard-schema/spec': 1.1.0
-      '@workflow/serde': 4.1.0
-      eventsource-parser: 3.1.1
-      undici: 7.30.2
-      zod: 4.6.7
-
   '@ai-sdk/provider-utils@5.0.81(zod@4.6.7)':
     dependencies:
       '@ai-sdk/provider': 4.0.38
+      '@standard-schema/spec': 1.1.0
+      '@workflow/serde': 4.1.0
+      eventsource-parser: 3.1.1
+      zod: 4.6.7
+
+  '@ai-sdk/provider-utils@5.0.82(zod@4.6.7)':
+    dependencies:
+      '@ai-sdk/provider': 4.0.39
       '@standard-schema/spec': 1.1.0
       '@workflow/serde': 4.1.0
       eventsource-parser: 3.1.1
@@ -3508,11 +3506,11 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/provider@4.0.35':
+  '@ai-sdk/provider@4.0.38':
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/provider@4.0.38':
+  '@ai-sdk/provider@4.0.39':
     dependencies:
       json-schema: 0.4.0
 
@@ -3625,7 +3623,7 @@ snapshots:
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
-  '@aws-sdk/credential-providers@3.1170.0':
+  '@aws-sdk/credential-providers@3.1171.0':
     dependencies:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/credential-provider-cognito-identity': 3.972.83
@@ -4081,7 +4079,7 @@ snapshots:
     dependencies:
       '@libsql/core': 0.18.0
       '@libsql/hrana-client': 0.10.0
-      js-base64: 3.9.6
+      js-base64: 3.9.7
       libsql: 0.5.29
       promise-limit: 2.7.0
     transitivePeerDependencies:
@@ -4090,7 +4088,7 @@ snapshots:
 
   '@libsql/core@0.18.0':
     dependencies:
-      js-base64: 3.9.6
+      js-base64: 3.9.7
 
   '@libsql/darwin-arm64@0.5.29':
     optional: true
@@ -4101,7 +4099,7 @@ snapshots:
   '@libsql/hrana-client@0.10.0':
     dependencies:
       '@libsql/isomorphic-ws': 0.1.5
-      js-base64: 3.9.6
+      js-base64: 3.9.7
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -4141,15 +4139,15 @@ snapshots:
     dependencies:
       '@lukeed/csprng': 1.1.0
 
-  '@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)':
+  '@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)':
     dependencies:
       '@a2a-js/sdk-v0_3': '@a2a-js/sdk@0.3.14(@grpc/grpc-js@1.14.7)'
       '@a2a-js/sdk-v1': '@a2a-js/sdk@1.0.1(@grpc/grpc-js@1.14.7)'
-      '@ai-sdk/provider-utils-v6': '@ai-sdk/provider-utils@4.0.63(zod@4.6.7)'
-      '@ai-sdk/provider-utils-v7': '@ai-sdk/provider-utils@5.0.72(zod@4.6.7)'
+      '@ai-sdk/provider-utils-v6': '@ai-sdk/provider-utils@4.0.66(zod@4.6.7)'
+      '@ai-sdk/provider-utils-v7': '@ai-sdk/provider-utils@5.0.81(zod@4.6.7)'
       '@ai-sdk/provider-v5': '@ai-sdk/provider@2.0.5'
       '@ai-sdk/provider-v6': '@ai-sdk/provider@3.0.19'
-      '@ai-sdk/provider-v7': '@ai-sdk/provider@4.0.35'
+      '@ai-sdk/provider-v7': '@ai-sdk/provider@4.0.38'
       '@isaacs/ttlcache': 2.1.5
       '@lukeed/uuid': 2.0.1
       '@mastra/schema-compat': 1.4.0(zod@4.6.7)
@@ -4195,22 +4193,22 @@ snapshots:
       - zod-openapi
       - zod-to-json-schema
 
-  '@mastra/deployer@1.83.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)':
+  '@mastra/deployer@1.84.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)':
     dependencies:
       '@babel/core': 8.1.2
       '@babel/preset-typescript': 8.0.7(@babel/core@8.1.2)
       '@babel/traverse': 8.1.2
       '@hono/node-ws': 1.3.1(@hono/node-server@2.1.9(hono@4.13.19))(hono@4.13.19)
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
-      '@mastra/server': 1.83.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
-      '@optimize-lodash/rollup-plugin': 5.1.0(rollup@4.68.5)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/server': 1.84.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
+      '@optimize-lodash/rollup-plugin': 5.1.0(rollup@4.68.6)
       '@pnpm/config.parse-overrides': 1100.1.8
-      '@rollup/plugin-alias': 6.0.0(rollup@4.68.5)
-      '@rollup/plugin-commonjs': 29.0.2(rollup@4.68.5)
-      '@rollup/plugin-esm-shim': 0.1.8(rollup@4.68.5)
-      '@rollup/plugin-json': 6.1.0(rollup@4.68.5)
-      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.68.5)
-      '@rollup/plugin-virtual': 3.0.2(rollup@4.68.5)
+      '@rollup/plugin-alias': 6.0.0(rollup@4.68.6)
+      '@rollup/plugin-commonjs': 29.0.2(rollup@4.68.6)
+      '@rollup/plugin-esm-shim': 0.1.8(rollup@4.68.6)
+      '@rollup/plugin-json': 6.1.0(rollup@4.68.6)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.68.6)
+      '@rollup/plugin-virtual': 3.0.2(rollup@4.68.6)
       '@sindresorhus/slugify': 2.2.1
       dotenv: 17.4.2
       empathic: 2.1.0
@@ -4221,8 +4219,8 @@ snapshots:
       hono: 4.13.19
       local-pkg: 1.2.1
       resolve.exports: 2.0.4
-      rollup: 4.68.5
-      rollup-plugin-esbuild: 6.2.1(esbuild@0.28.2)(rollup@4.68.5)
+      rollup: 4.68.6
+      rollup-plugin-esbuild: 6.2.1(esbuild@0.28.2)(rollup@4.68.6)
       semver: 7.8.6
       tinyglobby: 0.2.17
       ws: 8.23.0
@@ -4230,41 +4228,42 @@ snapshots:
     transitivePeerDependencies:
       - '@hono/node-server'
       - '@mastra/mcp'
+      - '@mastra/mcp-apps-components'
       - bufferutil
       - supports-color
       - utf-8-validate
       - zod
 
-  '@mastra/duckdb@1.19.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
+  '@mastra/duckdb@1.19.1(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
     dependencies:
       '@duckdb/node-api': 1.5.2-r.2
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
 
-  '@mastra/evals@1.10.11(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
+  '@mastra/evals@1.10.11(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       compromise: 14.20.0
       keyword-extractor: 0.0.28
       sentiment: 5.0.2
       string-similarity: 4.0.4
 
-  '@mastra/libsql@1.30.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
+  '@mastra/libsql@1.31.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
     dependencies:
       '@libsql/client': 0.18.0
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@mastra/loggers@1.3.10(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
+  '@mastra/loggers@1.3.10(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       pino: 10.4.0
       pino-pretty: 13.2.0
 
-  '@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
+  '@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       '@modelcontextprotocol/client': 2.4.0
       '@modelcontextprotocol/core': 2.4.0
       '@modelcontextprotocol/ext-apps': 2.0.4(@modelcontextprotocol/client@2.4.0)(@modelcontextprotocol/core@2.4.0)(@modelcontextprotocol/server@2.4.0)(zod@4.6.7)
@@ -4279,9 +4278,9 @@ snapshots:
       - react
       - react-dom
 
-  '@mastra/memory@1.41.1(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
+  '@mastra/memory@1.41.2(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       '@mastra/schema-compat': 1.4.0(zod@4.6.7)
       async-mutex: 0.5.0
       diff: 9.0.0
@@ -4293,25 +4292,25 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mastra/observability@1.24.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
+  '@mastra/observability@1.24.1(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       zod: 4.6.7
 
-  '@mastra/otel-bridge@1.5.22(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
+  '@mastra/otel-bridge@1.6.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
-      '@mastra/observability': 1.24.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
-      '@mastra/otel-exporter': 1.5.2(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/observability': 1.24.1(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+      '@mastra/otel-exporter': 1.6.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/api-logs': 0.223.0
     transitivePeerDependencies:
       - zod
 
-  '@mastra/otel-exporter@1.5.2(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
+  '@mastra/otel-exporter@1.6.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
-      '@mastra/observability': 1.24.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/observability': 1.24.1(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/api-logs': 0.223.0
       '@opentelemetry/core': 2.12.1(@opentelemetry/api@1.10.0)
@@ -4338,13 +4337,13 @@ snapshots:
       zod: 4.6.7
       zod-from-json-schema: 0.5.2
 
-  '@mastra/server@1.83.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)':
+  '@mastra/server@1.84.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)':
     dependencies:
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       hono: 4.13.19
       zod: 4.6.7
     optionalDependencies:
-      '@mastra/mcp': 2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
+      '@mastra/mcp': 2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7)
 
   '@modelcontextprotocol/client@2.4.0':
     dependencies:
@@ -4594,11 +4593,11 @@ snapshots:
 
   '@opentelemetry/semantic-conventions@1.45.0': {}
 
-  '@optimize-lodash/rollup-plugin@5.1.0(rollup@4.68.5)':
+  '@optimize-lodash/rollup-plugin@5.1.0(rollup@4.68.6)':
     dependencies:
       '@optimize-lodash/transform': 3.0.6
-      '@rollup/pluginutils': 5.5.1(rollup@4.68.5)
-      rollup: 4.68.5
+      '@rollup/pluginutils': 5.5.1(rollup@4.68.6)
+      rollup: 4.68.6
 
   '@optimize-lodash/transform@3.0.6':
     dependencies:
@@ -4748,7 +4747,7 @@ snapshots:
     dependencies:
       validate-npm-package-name: 7.0.2
 
-  '@posthog/core@1.68.0':
+  '@posthog/core@1.69.1':
     dependencies:
       '@posthog/types': 1.425.1
 
@@ -4774,13 +4773,13 @@ snapshots:
 
   '@protobufjs/utf8@1.1.2': {}
 
-  '@rollup/plugin-alias@6.0.0(rollup@4.68.5)':
+  '@rollup/plugin-alias@6.0.0(rollup@4.68.6)':
     optionalDependencies:
-      rollup: 4.68.5
+      rollup: 4.68.6
 
-  '@rollup/plugin-commonjs@29.0.2(rollup@4.68.5)':
+  '@rollup/plugin-commonjs@29.0.2(rollup@4.68.6)':
     dependencies:
-      '@rollup/pluginutils': 5.5.1(rollup@4.68.5)
+      '@rollup/pluginutils': 5.5.1(rollup@4.68.6)
       commondir: 1.0.1
       estree-walker: 2.0.2
       fdir: 6.5.0(picomatch@4.0.7)
@@ -4788,119 +4787,119 @@ snapshots:
       magic-string: 0.30.21
       picomatch: 4.0.7
     optionalDependencies:
-      rollup: 4.68.5
+      rollup: 4.68.6
 
-  '@rollup/plugin-esm-shim@0.1.8(rollup@4.68.5)':
+  '@rollup/plugin-esm-shim@0.1.8(rollup@4.68.6)':
     dependencies:
       magic-string: 0.30.21
       mlly: 1.8.2
     optionalDependencies:
-      rollup: 4.68.5
+      rollup: 4.68.6
 
-  '@rollup/plugin-json@6.1.0(rollup@4.68.5)':
+  '@rollup/plugin-json@6.1.0(rollup@4.68.6)':
     dependencies:
-      '@rollup/pluginutils': 5.5.1(rollup@4.68.5)
+      '@rollup/pluginutils': 5.5.1(rollup@4.68.6)
     optionalDependencies:
-      rollup: 4.68.5
+      rollup: 4.68.6
 
-  '@rollup/plugin-node-resolve@16.0.3(rollup@4.68.5)':
+  '@rollup/plugin-node-resolve@16.0.3(rollup@4.68.6)':
     dependencies:
-      '@rollup/pluginutils': 5.5.1(rollup@4.68.5)
+      '@rollup/pluginutils': 5.5.1(rollup@4.68.6)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
       resolve: 1.22.14
     optionalDependencies:
-      rollup: 4.68.5
+      rollup: 4.68.6
 
-  '@rollup/plugin-virtual@3.0.2(rollup@4.68.5)':
+  '@rollup/plugin-virtual@3.0.2(rollup@4.68.6)':
     optionalDependencies:
-      rollup: 4.68.5
+      rollup: 4.68.6
 
-  '@rollup/pluginutils@5.5.1(rollup@4.68.5)':
+  '@rollup/pluginutils@5.5.1(rollup@4.68.6)':
     dependencies:
       '@types/estree': 1.0.10
       estree-walker: 2.0.2
       picomatch: 4.0.7
     optionalDependencies:
-      rollup: 4.68.5
+      rollup: 4.68.6
 
-  '@rollup/rollup-android-arm-eabi@4.68.5':
+  '@rollup/rollup-android-arm-eabi@4.68.6':
     optional: true
 
-  '@rollup/rollup-android-arm64@4.68.5':
+  '@rollup/rollup-android-arm64@4.68.6':
     optional: true
 
-  '@rollup/rollup-android-x64@4.68.5':
+  '@rollup/rollup-android-x64@4.68.6':
     optional: true
 
-  '@rollup/rollup-darwin-arm64@4.68.5':
+  '@rollup/rollup-darwin-arm64@4.68.6':
     optional: true
 
-  '@rollup/rollup-darwin-x64@4.68.5':
+  '@rollup/rollup-darwin-x64@4.68.6':
     optional: true
 
-  '@rollup/rollup-freebsd-arm64@4.68.5':
+  '@rollup/rollup-freebsd-arm64@4.68.6':
     optional: true
 
-  '@rollup/rollup-freebsd-x64@4.68.5':
+  '@rollup/rollup-freebsd-x64@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.68.5':
+  '@rollup/rollup-linux-arm-gnueabihf@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-arm-musleabihf@4.68.5':
+  '@rollup/rollup-linux-arm-musleabihf@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-arm64-gnu@4.68.5':
+  '@rollup/rollup-linux-arm64-gnu@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-arm64-musl@4.68.5':
+  '@rollup/rollup-linux-arm64-musl@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-loong64-gnu@4.68.5':
+  '@rollup/rollup-linux-loong64-gnu@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-loong64-musl@4.68.5':
+  '@rollup/rollup-linux-loong64-musl@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-ppc64-gnu@4.68.5':
+  '@rollup/rollup-linux-ppc64-gnu@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-ppc64-musl@4.68.5':
+  '@rollup/rollup-linux-ppc64-musl@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-gnu@4.68.5':
+  '@rollup/rollup-linux-riscv64-gnu@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-musl@4.68.5':
+  '@rollup/rollup-linux-riscv64-musl@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-s390x-gnu@4.68.5':
+  '@rollup/rollup-linux-s390x-gnu@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-x64-gnu@4.68.5':
+  '@rollup/rollup-linux-x64-gnu@4.68.6':
     optional: true
 
-  '@rollup/rollup-linux-x64-musl@4.68.5':
+  '@rollup/rollup-linux-x64-musl@4.68.6':
     optional: true
 
-  '@rollup/rollup-openbsd-x64@4.68.5':
+  '@rollup/rollup-openbsd-x64@4.68.6':
     optional: true
 
-  '@rollup/rollup-openharmony-arm64@4.68.5':
+  '@rollup/rollup-openharmony-arm64@4.68.6':
     optional: true
 
-  '@rollup/rollup-win32-arm64-msvc@4.68.5':
+  '@rollup/rollup-win32-arm64-msvc@4.68.6':
     optional: true
 
-  '@rollup/rollup-win32-ia32-msvc@4.68.5':
+  '@rollup/rollup-win32-ia32-msvc@4.68.6':
     optional: true
 
-  '@rollup/rollup-win32-x64-gnu@4.68.5':
+  '@rollup/rollup-win32-x64-gnu@4.68.6':
     optional: true
 
-  '@rollup/rollup-win32-x64-msvc@4.68.5':
+  '@rollup/rollup-win32-x64-msvc@4.68.6':
     optional: true
 
   '@sec-ant/readable-stream@0.4.1': {}
@@ -5177,7 +5176,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.11.38
       caniuse-lite: 1.0.30001826
-      electron-to-chromium: 1.5.487
+      electron-to-chromium: 1.5.490
       node-releases: 2.0.65
       update-browserslist-db: 1.4.0(browserslist@4.29.6)
 
@@ -5204,7 +5203,7 @@ snapshots:
       remark-gfm: 4.0.1
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
-      remend: 1.4.0
+      remend: 1.5.0
       unified: 11.0.5
     optionalDependencies:
       zod: 4.6.7
@@ -5301,7 +5300,7 @@ snapshots:
 
   efrt@2.9.0: {}
 
-  electron-to-chromium@1.5.487: {}
+  electron-to-chromium@1.5.490: {}
 
   emoji-regex@8.0.0: {}
 
@@ -5521,7 +5520,7 @@ snapshots:
 
   jpeg-js@0.4.4: {}
 
-  js-base64@3.9.6: {}
+  js-base64@3.9.7: {}
 
   js-tokens@10.0.0: {}
 
@@ -5603,15 +5602,15 @@ snapshots:
 
   markdown-table@3.1.0: {}
 
-  mastra@1.39.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7):
+  mastra@1.40.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7):
     dependencies:
       '@babel/parser': 8.1.2
       '@babel/types': 8.1.2
       '@clack/prompts': 1.9.0
       '@expo/devcert': 1.2.2
-      '@mastra/core': 1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
-      '@mastra/deployer': 1.83.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.9.0(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
-      '@mastra/loggers': 1.3.10(@mastra/core@1.83.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
+      '@mastra/core': 1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
+      '@mastra/deployer': 1.84.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
+      '@mastra/loggers': 1.3.10(@mastra/core@1.84.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
       archiver: 8.0.0(bare-buffer@3.7.3)
       commander: 14.0.3
       dotenv: 17.4.2
@@ -5631,6 +5630,7 @@ snapshots:
     transitivePeerDependencies:
       - '@hono/node-server'
       - '@mastra/mcp'
+      - '@mastra/mcp-apps-components'
       - '@opentelemetry/api'
       - '@react-email/render'
       - bare-abort-controller
@@ -6128,7 +6128,7 @@ snapshots:
 
   posthog-node@5.74.0(@opentelemetry/api@1.10.0):
     dependencies:
-      '@posthog/core': 1.68.0
+      '@posthog/core': 1.69.1
     optionalDependencies:
       '@opentelemetry/api': 1.10.0
 
@@ -6230,7 +6230,7 @@ snapshots:
       mdast-util-to-markdown: 2.2.3
       unified: 11.0.5
 
-  remend@1.4.0: {}
+  remend@1.5.0: {}
 
   require-directory@2.1.1: {}
 
@@ -6247,47 +6247,47 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rollup-plugin-esbuild@6.2.1(esbuild@0.28.2)(rollup@4.68.5):
+  rollup-plugin-esbuild@6.2.1(esbuild@0.28.2)(rollup@4.68.6):
     dependencies:
       debug: 4.4.3
       es-module-lexer: 1.7.0
       esbuild: 0.28.2
       get-tsconfig: 4.14.3
-      rollup: 4.68.5
+      rollup: 4.68.6
       unplugin-utils: 0.2.5
     transitivePeerDependencies:
       - supports-color
 
-  rollup@4.68.5:
+  rollup@4.68.6:
     dependencies:
       '@types/estree': 1.0.10
     optionalDependencies:
-      '@rollup/rollup-android-arm-eabi': 4.68.5
-      '@rollup/rollup-android-arm64': 4.68.5
-      '@rollup/rollup-android-x64': 4.68.5
-      '@rollup/rollup-darwin-arm64': 4.68.5
-      '@rollup/rollup-darwin-x64': 4.68.5
-      '@rollup/rollup-freebsd-arm64': 4.68.5
-      '@rollup/rollup-freebsd-x64': 4.68.5
-      '@rollup/rollup-linux-arm-gnueabihf': 4.68.5
-      '@rollup/rollup-linux-arm-musleabihf': 4.68.5
-      '@rollup/rollup-linux-arm64-gnu': 4.68.5
-      '@rollup/rollup-linux-arm64-musl': 4.68.5
-      '@rollup/rollup-linux-loong64-gnu': 4.68.5
-      '@rollup/rollup-linux-loong64-musl': 4.68.5
-      '@rollup/rollup-linux-ppc64-gnu': 4.68.5
-      '@rollup/rollup-linux-ppc64-musl': 4.68.5
-      '@rollup/rollup-linux-riscv64-gnu': 4.68.5
-      '@rollup/rollup-linux-riscv64-musl': 4.68.5
-      '@rollup/rollup-linux-s390x-gnu': 4.68.5
-      '@rollup/rollup-linux-x64-gnu': 4.68.5
-      '@rollup/rollup-linux-x64-musl': 4.68.5
-      '@rollup/rollup-openbsd-x64': 4.68.5
-      '@rollup/rollup-openharmony-arm64': 4.68.5
-      '@rollup/rollup-win32-arm64-msvc': 4.68.5
-      '@rollup/rollup-win32-ia32-msvc': 4.68.5
-      '@rollup/rollup-win32-x64-gnu': 4.68.5
-      '@rollup/rollup-win32-x64-msvc': 4.68.5
+      '@rollup/rollup-android-arm-eabi': 4.68.6
+      '@rollup/rollup-android-arm64': 4.68.6
+      '@rollup/rollup-android-x64': 4.68.6
+      '@rollup/rollup-darwin-arm64': 4.68.6
+      '@rollup/rollup-darwin-x64': 4.68.6
+      '@rollup/rollup-freebsd-arm64': 4.68.6
+      '@rollup/rollup-freebsd-x64': 4.68.6
+      '@rollup/rollup-linux-arm-gnueabihf': 4.68.6
+      '@rollup/rollup-linux-arm-musleabihf': 4.68.6
+      '@rollup/rollup-linux-arm64-gnu': 4.68.6
+      '@rollup/rollup-linux-arm64-musl': 4.68.6
+      '@rollup/rollup-linux-loong64-gnu': 4.68.6
+      '@rollup/rollup-linux-loong64-musl': 4.68.6
+      '@rollup/rollup-linux-ppc64-gnu': 4.68.6
+      '@rollup/rollup-linux-ppc64-musl': 4.68.6
+      '@rollup/rollup-linux-riscv64-gnu': 4.68.6
+      '@rollup/rollup-linux-riscv64-musl': 4.68.6
+      '@rollup/rollup-linux-s390x-gnu': 4.68.6
+      '@rollup/rollup-linux-x64-gnu': 4.68.6
+      '@rollup/rollup-linux-x64-musl': 4.68.6
+      '@rollup/rollup-openbsd-x64': 4.68.6
+      '@rollup/rollup-openharmony-arm64': 4.68.6
+      '@rollup/rollup-win32-arm64-msvc': 4.68.6
+      '@rollup/rollup-win32-ia32-msvc': 4.68.6
+      '@rollup/rollup-win32-x64-gnu': 4.68.6
+      '@rollup/rollup-win32-x64-msvc': 4.68.6
       fsevents: 2.3.3
 
   safe-buffer@5.1.2: {}
@@ -6446,8 +6446,6 @@ snapshots:
   undici-types@8.9.0: {}
 
   undici@6.29.1: {}
-
-  undici@7.30.2: {}
 
   unicorn-magic@0.3.0: {}
 
