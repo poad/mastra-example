@@ -197,8 +197,8 @@ importers:
         specifier: ^5.0.82
         version: 5.0.82(zod@4.6.7)
       '@aws-sdk/credential-providers':
-        specifier: ^3.1172.0
-        version: 3.1172.0
+        specifier: ^3.1173.0
+        version: 3.1173.0
       '@grpc/grpc-js':
         specifier: ^1.14.7
         version: 1.14.7
@@ -247,13 +247,13 @@ importers:
         version: 2.0.0-r.1
       '@mastra/deployer':
         specifier: ^1.85.0
-        version: 1.85.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
+        version: 1.85.0(@hono/node-server@2.1.11(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
       '@types/node':
         specifier: ^26.6.6
         version: 26.6.6
       mastra:
         specifier: ^1.40.1
-        version: 1.40.1(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7)
+        version: 1.40.1(@hono/node-server@2.1.11(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7)
       node:
         specifier: runtime:^26.13.1
         version: runtime:26.13.1
@@ -395,8 +395,8 @@ packages:
     resolution: {integrity: sha512-duLeE3xlf0viHeH+1RM4z5duR3b32BCZTWVMu+MbxFPjQBxy7hmIGEqt5hekuFPRuXoyhMovjNl+PNNsb5oiGQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-providers@3.1172.0':
-    resolution: {integrity: sha512-ntWcHM9L5YDcZaa5rRMUiXztubKefl0yRRFe29t+cG/2jKD7ZWJ0+JDQdZ+0g4/ps+TxucVrtwQhltibadubOw==}
+  '@aws-sdk/credential-providers@3.1173.0':
+    resolution: {integrity: sha512-lmOiI3yN6Xf3Dekr27l4t5QyoszOzmUsy98nzP5S9E9nuBV0BJYr8DZQ9UyBcl5hQZ6u6b47/kAucQQm1ZtJQw==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/nested-clients@3.998.3':
@@ -828,8 +828,8 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  '@hono/node-server@2.1.9':
-    resolution: {integrity: sha512-Sk4NQd3GFY0WZWCzndwFMPwJhtD0y9qjsQ+pjID0/03nK9pxyBCUoUHCho8QYBLBVhi0ssL8UkNPHqbgSOFPIQ==}
+  '@hono/node-server@2.1.11':
+    resolution: {integrity: sha512-KzKz9vl4vvr1vgLHamj+g5uonbrj5NwAdO3yzOS6cd2HjALVeOgTgeZOyAzNxejbkfOOPIcvuf/Tg8l1pEFLog==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4 || ^5.0.0-0
@@ -1544,8 +1544,8 @@ packages:
     resolution: {integrity: sha512-3fhvdnSFTcLGgaVIISc+269N4j2ugpUsiRErdT+M2vyOc0b3Vgs2mvSPdFyq2insCL4vFLiHOZxg7SddSFjMTQ==}
     engines: {node: '>=22.13'}
 
-  '@posthog/core@1.69.1':
-    resolution: {integrity: sha512-36hlJRZlVh5d+yBOmqObT162SrqNes9yY4x4wLDXVSu5Dzdt19KNxQ136cd37+U0yABZVx7ehjtWslyn1iG+0Q==}
+  '@posthog/core@1.69.2':
+    resolution: {integrity: sha512-toMfPKklwLW+a4ZY3/EzM3GNMVXmk2ylGb8NPJXRH4igXMoI8wgNL2jqXOiglWAXqFBLZGYFN1oQx6LVmUTxTg==}
 
   '@posthog/types@1.427.0':
     resolution: {integrity: sha512-2RPVfuGIx0iys78mTOcfdzN7/w7AM1Ak3yu9++4/FonPf08mwGqDkJjThz2dA/34666ToNw5Q4fZoFdgvfNUHw==}
@@ -2125,8 +2125,8 @@ packages:
       bare-abort-controller:
         optional: true
 
-  bare-fs@4.8.4:
-    resolution: {integrity: sha512-MPC2eyrpbk3A873sK4y6rk+Iv4o2enxTjHZ8zH3HO0mjrpm5XjnguY2XmfidIsDV6vnjpbMBKUAJpV0ISD2SsQ==}
+  bare-fs@4.8.5:
+    resolution: {integrity: sha512-5gborbd4IEFpnyqAiwD0tl6sH9fvPvIaK2hdM8DXU+xAMxSB7B3D3D04CD21k4T5C6u5Oxw3iajkBQhNLxINKg==}
     engines: {bare: '>=1.28.0'}
     peerDependencies:
       bare-buffer: '*'
@@ -2157,8 +2157,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  baseline-browser-mapping@2.11.38:
-    resolution: {integrity: sha512-rMgy5YW7x28SMfXHLlVZDBqlWzYZ0x2rVR/6FWrNBF0chjigARK1H6nM0hKA1Um3kPOlkQFVtjJs00d2N1ezuw==}
+  baseline-browser-mapping@2.11.39:
+    resolution: {integrity: sha512-Q9buOYhr2ggrEZpImICecZTJHCCd8yXkRUokFlUEQ8uiD6oP82F4W4jWnhOHZYV+wlvrC51V7Wy0ULyWjil5Wg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -2332,8 +2332,8 @@ packages:
     resolution: {integrity: sha512-ZMAvlcu4AfmtJ4K/0hs0uofVUZPSeLG/w4yOyZawQLl9YEy8iDKIxIIPsUAlS907clC7bgD17e73vi5unwNE/g==}
     engines: {node: '>=12.0.0'}
 
-  electron-to-chromium@1.5.491:
-    resolution: {integrity: sha512-zMOQrvaTekJMwENqx1Rnyl3qieqGxIui5CRu9g6ktKzQ/T54fq0Qfr3V/SEhGrkStWI3eYMSzMN4rbyFwfQSzA==}
+  electron-to-chromium@1.5.492:
+    resolution: {integrity: sha512-4uMs7omhajKiud0GqALLTazS/zyvHLTLmDWVTR+e6BnyJo5bSNrph/JoRWEFJJmY75ct9hCiSGsbFF9fLe5gDw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2401,8 +2401,8 @@ packages:
   extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
 
-  fast-copy@4.3.2:
-    resolution: {integrity: sha512-Ctcuv1tplX+8bX/VBu6DD8gZyDEtbP+jo+jnNCR9LVNSWR6DWauNol44WGQC2+uMCnFG7oRw/67ldmTIADdtgA==}
+  fast-copy@4.3.3:
+    resolution: {integrity: sha512-U3A5d4cBrc7fpZ2Sbz46FbFl+VdnCBAwRQaIR7IFWsyvndISF5CGjTbhiawGoMv7Ob8slBY1nT8XT3bWRFErzA==}
 
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
@@ -2651,14 +2651,14 @@ packages:
     peerDependencies:
       '@mastra/core': '>=1.83.0-0 <2.0.0-0'
 
-  mdast-util-find-and-replace@3.0.4:
-    resolution: {integrity: sha512-z4B5c6jrnJ1ltOQemhWYPBSAo6y42Z8Gt2yEgfgNTMcLSU59B8bfj8Z8AnAlJrBGLnqkdAUZ7jdDEqQw3KuipQ==}
+  mdast-util-find-and-replace@3.0.5:
+    resolution: {integrity: sha512-of3wZLEBWpK8mSYy8wmKnwyxfUKjhCkXxGLz45DVBqfcahTP37LscCK+0oAZh+ReZ5OunPDkB2zdGMIxrojLhw==}
 
   mdast-util-from-markdown@2.1.0:
     resolution: {integrity: sha512-KRLgmPaP2H1ul2bpoJkOS+9pAcDAAj9Nu1mqLnh8NLeJG5tlvj42TH80PIGBpROWlRXLk0lDrWNuZCFy/tsB4A==}
 
-  mdast-util-gfm-autolink-literal@2.1.0:
-    resolution: {integrity: sha512-Jx6QSK8wDo558Bcf7q+1pe0v81g2PVs09Hlvu9xJHmCFRF3sAPW7vXFVIAwBncs3sde92WbsVqNxwdqViA2XnQ==}
+  mdast-util-gfm-autolink-literal@2.1.2:
+    resolution: {integrity: sha512-rAlbZBGZfv2YRr6lSFGHTN305KkNawOYRRlbldFyPHnTlHJZwlGdzVwyIDvr3fxbhRbmJOSZc06c8H5Fgfu8Ng==}
 
   mdast-util-gfm-footnote@2.1.0:
     resolution: {integrity: sha512-sqpDWlsHn7Ac9GNZQMeUzPQSMzR6Wv0WKRNvQRg0KqHh02fpTz69Qc1QSseNX29bhz1ROIyNyxExfawVKTm1GQ==}
@@ -2678,8 +2678,8 @@ packages:
   mdast-util-phrasing@4.1.0:
     resolution: {integrity: sha512-TqICwyvJJpBwvGAMZjj4J2n0X8QWp21b9l0o7eXyVJ25YNWYbJDVIyD1bZXE6WtV6RmKJVYmQAKWa0zWOABz2w==}
 
-  mdast-util-to-markdown@2.2.3:
-    resolution: {integrity: sha512-dImdB6VZRMRac1SwAW6o1c0ESk/7pFFAMCMuKM+9v7LpTSthMM5nzXpqKw4Mjo66aXVKhNkyrP4bMB9MurPyWg==}
+  mdast-util-to-markdown@2.2.4:
+    resolution: {integrity: sha512-aCsogoZ2Oz1EItAlC12A+/uGuzp+CWlDU0xZ3o5jbJaepLsOu2tlxpvHslnX5dRhspD1gxNVkBtYG0yMiIpXoQ==}
 
   mdast-util-to-string@4.0.0:
     resolution: {integrity: sha512-0H44vDimn51F0YwvxSJSm0eCDOJTRlmN0R1yBh4HLj9wiV1Dn0QoXGbvFAWj2hSItVTlCmBF1hqKlIyUBVFLPg==}
@@ -3623,7 +3623,7 @@ snapshots:
       '@smithy/types': 4.20.0
       tslib: 2.9.1
 
-  '@aws-sdk/credential-providers@3.1172.0':
+  '@aws-sdk/credential-providers@3.1173.0':
     dependencies:
       '@aws-sdk/core': 3.981.0
       '@aws-sdk/credential-provider-cognito-identity': 3.972.83
@@ -4035,13 +4035,13 @@ snapshots:
       protobufjs: 7.6.6
       yargs: 17.7.3
 
-  '@hono/node-server@2.1.9(hono@4.13.19)':
+  '@hono/node-server@2.1.11(hono@4.13.19)':
     dependencies:
       hono: 4.13.19
 
-  '@hono/node-ws@1.3.1(@hono/node-server@2.1.9(hono@4.13.19))(hono@4.13.19)':
+  '@hono/node-ws@1.3.1(@hono/node-server@2.1.11(hono@4.13.19))(hono@4.13.19)':
     dependencies:
-      '@hono/node-server': 2.1.9(hono@4.13.19)
+      '@hono/node-server': 2.1.11(hono@4.13.19)
       hono: 4.13.19
       ws: 8.23.0
     transitivePeerDependencies:
@@ -4193,12 +4193,12 @@ snapshots:
       - zod-openapi
       - zod-to-json-schema
 
-  '@mastra/deployer@1.85.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)':
+  '@mastra/deployer@1.85.0(@hono/node-server@2.1.11(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)':
     dependencies:
       '@babel/core': 8.1.2
       '@babel/preset-typescript': 8.0.7(@babel/core@8.1.2)
       '@babel/traverse': 8.1.2
-      '@hono/node-ws': 1.3.1(@hono/node-server@2.1.9(hono@4.13.19))(hono@4.13.19)
+      '@hono/node-ws': 1.3.1(@hono/node-server@2.1.11(hono@4.13.19))(hono@4.13.19)
       '@mastra/core': 1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
       '@mastra/server': 1.85.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
       '@optimize-lodash/rollup-plugin': 5.1.0(rollup@4.68.7)
@@ -4370,7 +4370,7 @@ snapshots:
 
   '@modelcontextprotocol/node@2.1.2(@modelcontextprotocol/server@2.4.0)':
     dependencies:
-      '@hono/node-server': 2.1.9(hono@4.13.19)
+      '@hono/node-server': 2.1.11(hono@4.13.19)
       '@modelcontextprotocol/server': 2.4.0
       hono: 4.13.19
 
@@ -4747,7 +4747,7 @@ snapshots:
     dependencies:
       validate-npm-package-name: 7.0.2
 
-  '@posthog/core@1.69.1':
+  '@posthog/core@1.69.2':
     dependencies:
       '@posthog/types': 1.427.0
 
@@ -5126,7 +5126,7 @@ snapshots:
 
   bare-events@2.9.2: {}
 
-  bare-fs@4.8.4(bare-buffer@3.7.3):
+  bare-fs@4.8.5(bare-buffer@3.7.3):
     dependencies:
       bare-events: 2.9.2
       bare-path: 3.1.3
@@ -5159,7 +5159,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.11.38: {}
+  baseline-browser-mapping@2.11.39: {}
 
   bowser@2.15.0: {}
 
@@ -5174,9 +5174,9 @@ snapshots:
 
   browserslist@4.29.6:
     dependencies:
-      baseline-browser-mapping: 2.11.38
+      baseline-browser-mapping: 2.11.39
       caniuse-lite: 1.0.30001826
-      electron-to-chromium: 1.5.491
+      electron-to-chromium: 1.5.492
       node-releases: 2.0.65
       update-browserslist-db: 1.4.0(browserslist@4.29.6)
 
@@ -5300,7 +5300,7 @@ snapshots:
 
   efrt@2.9.0: {}
 
-  electron-to-chromium@1.5.491: {}
+  electron-to-chromium@1.5.492: {}
 
   emoji-regex@8.0.0: {}
 
@@ -5386,7 +5386,7 @@ snapshots:
 
   extend@3.0.2: {}
 
-  fast-copy@4.3.2: {}
+  fast-copy@4.3.3: {}
 
   fast-deep-equal@3.1.3: {}
 
@@ -5602,14 +5602,14 @@ snapshots:
 
   markdown-table@3.1.0: {}
 
-  mastra@1.40.1(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7):
+  mastra@1.40.1(@hono/node-server@2.1.11(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(@opentelemetry/api@1.10.0)(bare-buffer@3.7.3)(zod@4.6.7):
     dependencies:
       '@babel/parser': 8.1.2
       '@babel/types': 8.1.2
       '@clack/prompts': 1.9.0
       '@expo/devcert': 1.2.2
       '@mastra/core': 1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7)
-      '@mastra/deployer': 1.85.0(@hono/node-server@2.1.9(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
+      '@mastra/deployer': 1.85.0(@hono/node-server@2.1.11(hono@4.13.19))(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(@mastra/mcp@2.10.0(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))(zod@4.6.7))(zod@4.6.7)
       '@mastra/loggers': 1.3.11(@mastra/core@1.85.0(@grpc/grpc-js@1.14.7)(@opentelemetry/api@1.10.0)(zod@4.6.7))
       archiver: 8.0.0(bare-buffer@3.7.3)
       commander: 14.0.3
@@ -5642,7 +5642,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  mdast-util-find-and-replace@3.0.4:
+  mdast-util-find-and-replace@3.0.5:
     dependencies:
       '@types/mdast': 4.0.4
       escape-string-regexp: 5.0.0
@@ -5666,12 +5666,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-gfm-autolink-literal@2.1.0:
+  mdast-util-gfm-autolink-literal@2.1.2:
     dependencies:
       '@types/mdast': 4.0.4
       ccount: 2.0.1
       devlop: 1.1.0
-      mdast-util-find-and-replace: 3.0.4
+      mdast-util-find-and-replace: 3.0.5
       micromark-util-character: 2.1.1
 
   mdast-util-gfm-footnote@2.1.0:
@@ -5679,7 +5679,7 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.1.0
-      mdast-util-to-markdown: 2.2.3
+      mdast-util-to-markdown: 2.2.4
       micromark-util-normalize-identifier: 2.0.1
     transitivePeerDependencies:
       - supports-color
@@ -5688,7 +5688,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       mdast-util-from-markdown: 2.1.0
-      mdast-util-to-markdown: 2.2.3
+      mdast-util-to-markdown: 2.2.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5698,7 +5698,7 @@ snapshots:
       devlop: 1.1.0
       markdown-table: 3.1.0
       mdast-util-from-markdown: 2.1.0
-      mdast-util-to-markdown: 2.2.3
+      mdast-util-to-markdown: 2.2.4
       mdast-util-to-string: 4.0.0
       unist-util-visit: 5.2.0
     transitivePeerDependencies:
@@ -5709,19 +5709,19 @@ snapshots:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.1.0
-      mdast-util-to-markdown: 2.2.3
+      mdast-util-to-markdown: 2.2.4
     transitivePeerDependencies:
       - supports-color
 
   mdast-util-gfm@3.1.0:
     dependencies:
       mdast-util-from-markdown: 2.1.0
-      mdast-util-gfm-autolink-literal: 2.1.0
+      mdast-util-gfm-autolink-literal: 2.1.2
       mdast-util-gfm-footnote: 2.1.0
       mdast-util-gfm-strikethrough: 2.0.1
       mdast-util-gfm-table: 2.0.1
       mdast-util-gfm-task-list-item: 2.0.1
-      mdast-util-to-markdown: 2.2.3
+      mdast-util-to-markdown: 2.2.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5730,7 +5730,7 @@ snapshots:
       '@types/mdast': 4.0.4
       unist-util-is: 6.0.1
 
-  mdast-util-to-markdown@2.2.3:
+  mdast-util-to-markdown@2.2.4:
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
@@ -6084,7 +6084,7 @@ snapshots:
     dependencies:
       colorette: 2.0.20
       dateformat: 4.6.3
-      fast-copy: 4.3.2
+      fast-copy: 4.3.3
       fast-safe-stringify: 2.1.1
       help-me: 5.0.0
       joycon: 3.1.1
@@ -6128,7 +6128,7 @@ snapshots:
 
   posthog-node@5.74.0(@opentelemetry/api@1.10.0):
     dependencies:
-      '@posthog/core': 1.69.1
+      '@posthog/core': 1.69.2
     optionalDependencies:
       '@opentelemetry/api': 1.10.0
 
@@ -6227,7 +6227,7 @@ snapshots:
   remark-stringify@11.0.0:
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-to-markdown: 2.2.3
+      mdast-util-to-markdown: 2.2.4
       unified: 11.0.5
 
   remend@1.5.0: {}
@@ -6376,7 +6376,7 @@ snapshots:
   tar-stream@3.2.2(bare-buffer@3.7.3):
     dependencies:
       b4a: 1.9.0
-      bare-fs: 4.8.4(bare-buffer@3.7.3)
+      bare-fs: 4.8.5(bare-buffer@3.7.3)
       fast-fifo: 1.3.2
       streamx: 2.28.1
     transitivePeerDependencies:
